@@ -1,0 +1,159 @@
+@import "../../styles/variables.module";
+
+.footer-main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 50px;
+    box-sizing: border-box;
+    border-top: 1px solid $faded-border;
+
+    .footer-contents {
+        max-width: $max-view-width;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: row;
+        gap: 30px;
+
+        .footer-column {
+            flex: 1;
+            width: fit-content;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+            gap: 40px;
+            color: $text-brown;
+            font-size: 16px;
+
+            .column-section {
+                width: fit-content;
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                flex-direction: column;
+                gap: 10px;
+
+                .section-title {
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                }
+
+                .section-text {
+                    margin-bottom: 10px;
+                }
+
+                .section-link {
+                    margin: 10px 0px;
+                    color: $text-grey;
+                    text-decoration: none;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: $text-brown;
+                    }
+                }
+
+                .social-media-section {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    flex-direction: row;
+                    gap: 25px;
+
+                    .media-icon {
+                        margin: 10px 0px;
+                        color: $text-grey;
+                        text-decoration: none;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: $text-brown;
+                        }
+                    }
+                }
+
+                .contact-section,
+                .address-section {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    flex-direction: column;
+                    gap: 8px;
+                    margin-bottom: 10px;
+
+                    .contact-line,
+                    .address-line {
+                        &.email {
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+
+                .logo-section {
+                    width: fit-content;
+                    height: auto;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    margin-left: -15px;
+
+                    img {
+                        width: 80px;
+                        height: auto;
+                    }
+                }
+
+                .name-section {
+                    font-size: 24px;
+                    font-weight: 600;
+                    color: $text-brown;
+                }
+            }
+        }
+
+    }
+
+    .footer-bottom-section {
+        max-width: $max-view-width;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 0px;
+        box-sizing: border-box;
+        font-size: 12px;
+        color: $text-grey;
+
+        .terms-section {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: row;
+            gap: 7px;
+
+            .term-text {
+                padding-right: 10px;
+                text-decoration: none;
+                color: $text-grey;
+                cursor: pointer;
+
+                &:hover {
+                    color: $text-brown;
+                }
+
+                &:first-child {
+                    border-right: 2px solid $faded-border;
+                }
+            }
+        }
+    }
+}

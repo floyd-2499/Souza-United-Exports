@@ -1,0 +1,206 @@
+@import "../../styles/variables.module";
+
+.header-main {
+    width: 100%;
+    height: $header-height;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $white-bg;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    .header-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+
+        a {
+            outline: none;
+            text-decoration: none;
+            color: $text-dark;
+            cursor: pointer;
+        }
+
+        // Animation
+        @keyframes rotateLogo {
+
+            0%,
+            10% {
+                transform: rotate(0deg);
+            }
+
+            20% {
+                transform: rotate(360deg);
+            }
+
+            85% {
+                transform: rotate(360deg);
+            }
+
+            90% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(-360deg);
+            }
+        }
+
+        @keyframes borderAnimation {
+
+            0%,
+            100% {
+                border-left-color: $white-bg;
+            }
+
+            10%,
+            20%,
+            90% {
+                border-left-color: $faded-bg;
+            }
+        }
+
+        @keyframes topTextAnimation {
+
+            0%,
+            15%,
+            100% {
+                visibility: hidden;
+                transform: translateX(-100%);
+            }
+
+            25% {
+                visibility: visible;
+                transform: translateX(0);
+            }
+
+            80%,
+            90% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes bottomTextAnimation {
+
+            0%,
+            25%,
+            100% {
+                visibility: hidden;
+                transform: translateX(-100%);
+            }
+
+            35% {
+                visibility: visible;
+                transform: translateX(0);
+            }
+
+            90% {
+                transform: translateX(0);
+            }
+        }
+
+        .logo-section {
+            width: 350px;
+
+            .menu-item {
+                width: fit-content;
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+
+                img {
+                    width: 60px;
+                    height: auto;
+                    animation: rotateLogo 7s linear infinite;
+                }
+
+                .animation-section {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+                    flex-direction: column;
+                    gap: 5px;
+                    margin-left: 20px;
+                    padding-left: 10px;
+                    border-left: 2px solid transparent;
+                    animation: borderAnimation 7s linear infinite;
+                    overflow: hidden;
+                    // font-weight: 600;
+
+                    .top-text {
+                        color: $text-dark;
+                        font-size: 28px;
+                        transform: translateX(-100%);
+                        animation: topTextAnimation 7s linear infinite;
+                    }
+
+                    .bottom-text {
+                        color: $text-highlight;
+                        font-size: 16px;
+                        font-weight: 500;
+                        transform: translateX(-100%);
+                        animation: bottomTextAnimation 7s linear infinite;
+                    }
+                }
+            }
+        }
+
+        .menu-contents {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 60px;
+
+            .menu-item {
+                font-size: 16px;
+
+                &:hover {
+                    color: $text-highlight;
+                    padding-bottom: 1px;
+                    border-bottom: 2px solid $primary-color;
+                }
+            }
+        }
+
+        .action-items {
+            width: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-direction: row;
+            gap: 30px;
+
+            .menu-item {
+                font-size: 16px;
+            }
+
+            .quote-button {
+                &:hover {
+                    color: $text-highlight;
+                }
+            }
+
+            .contact-button {
+                display: flex;
+                flex: 1;
+                padding: 10px 20px;
+                border-radius: 5px;
+                border: 2px solid $primary-color;
+                background-color: $primary-color;
+                color: $text-white !important;
+                font-size: 18px;
+
+                &:hover {
+                    background-color: $white-bg;
+                    color: $text-highlight !important;
+                }
+            }
+
+        }
+    }
+}

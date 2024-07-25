@@ -1,0 +1,102 @@
+@import "../../styles/variables.module";
+
+.home-page-main {
+    width: 100%;
+    height: fit-content;
+
+    .hero-section {
+        width: 100%;
+        height: calc(100vh - $header-height);
+    }
+
+    .details-section {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 100px 0px;
+        box-sizing: border-box;
+
+        &-container {
+            width: 100%;
+            height: fit-content;
+            max-width: $max-view-width;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 40px;
+
+            .image-area {
+                width: 40%;
+                height: 175px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: auto;
+                    height: 100%;
+                    border-radius: 5px;
+                }
+
+            }
+
+            .details-area {
+                width: 70%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                margin: auto;
+
+                &-content {
+                    width: 100%;
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                    line-height: 34px;
+                    color: $text-dark;
+                    text-align: center;
+                }
+
+                .redirect-button {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+                    cursor: pointer;
+                    box-sizing: border-box;
+                    color: $text-highlight;
+                    margin-top: 10px;
+
+                    .button-icon {
+                        margin-bottom: -4px;
+                    }
+
+                    &:hover {
+
+                        @keyframes moveRight {
+                            0% {
+                                transform: translateX(0);
+                            }
+
+                            50% {
+                                transform: translateX(10px);
+                            }
+
+                            100% {
+                                transform: translateX(0);
+                            }
+                        }
+
+                        .button-icon {
+                            animation: moveRight 1.5s ease-in-out infinite;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

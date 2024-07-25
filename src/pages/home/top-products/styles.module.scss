@@ -1,0 +1,125 @@
+@import "../../../styles/variables.module";
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-50%)); // Adjust this value based on the width of your container and cards
+    }
+}
+
+.top-products-contents {
+    width: 100%;
+    max-width: $max-view-width;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    padding: 50px 0px;
+    overflow-x: hidden; // Hide horizontal scrollbar
+
+    .products-header-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-bottom: 20px;
+
+        .section-title {
+            font-size: 32px;
+            color: $text-brown;
+        }
+
+        .section-redirection-button {
+            text-decoration: none;
+            color: $text-highlight;
+        }
+    }
+
+    .animation-container {
+        display: flex;
+        overflow-x: hidden; // Hide horizontal scrollbar
+
+        .cards-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            gap: 20px;
+            animation: scroll var(--animation-duration) linear infinite; // Use CSS variable for animation duration
+
+            &:hover {
+                animation-play-state: paused; // Pause animation on hover
+            }
+
+            .card {
+                height: 470px;
+                width: 300px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                flex-direction: column;
+                gap: 10px;
+                padding: 10px;
+                box-sizing: border-box;
+                border-radius: 8px;
+                border: 2px solid $faded-border;
+                position: relative;
+                cursor: pointer;
+
+                &:hover {
+                    box-shadow: 4px 4px 10px $primary-shadow;
+                }
+
+                .image-section {
+                    width: 100%;
+                    height: 280px; //300 - 20
+                    border-radius: 4px;
+                    border: 1px solid $primary-border;
+                }
+
+                .description-section {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    flex-direction: column;
+
+                    .product-name {
+                        width: 100%;
+                        text-align: left;
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: $text-brown;
+                    }
+
+                    .product-description {
+                        margin-top: 5px;
+                        font-size: 12px;
+                        line-height: 16px;
+                    }
+
+                }
+
+                .view-details-button {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    position: absolute;
+                    bottom: 10px;
+                    right: 10px;
+                    font-size: 14px;
+                    color: $text-highlight;
+
+                    &:hover {
+                        color: $text-brown;
+                    }
+                }
+            }
+        }
+    }
+}

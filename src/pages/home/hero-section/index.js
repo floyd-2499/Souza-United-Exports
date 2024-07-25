@@ -57,7 +57,7 @@ const HeroSectionMain = () => {
             <Carousel autoplay autoplaySpeed={5000} arrows infinite dotPosition="bottom">
                 {carouselContents.map((content) => {
                     return (
-                        <div className={classNames(styles["carousel-page"], styles[content.position])}>
+                        <div key={content.id} className={classNames(styles["carousel-page"], styles[content.position])}>
                             <div className={styles["carousel-text-section"]}>
                                 <div className={styles["text-contents"]}>
                                     <div className={styles["main-text"]}>{content.title}</div>

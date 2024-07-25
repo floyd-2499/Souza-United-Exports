@@ -1,0 +1,52 @@
+@import "../../styles/variables.module";
+
+.products-page-main {
+    width: 100%;
+    max-width: $max-view-width;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+
+    .products-filters {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: row;
+
+        .filter-container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+            gap: 5px;
+
+            .filter-label {
+                font-size: 14px;
+                color: $text-brown;
+            }
+
+            .filter-dropdown {
+                width: 225px;
+
+                .filter-select {
+                    width: 100%;
+
+                    .ant-select-selector {
+                        padding: 5px 5px;
+                        line-height: 30px;
+                        background-color: $white-bg;
+                        border: none;
+                        outline: none;
+                        box-sizing: border-box;
+                    }
+                }
+
+            }
+        }
+    }
+}

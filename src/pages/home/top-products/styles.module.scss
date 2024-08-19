@@ -27,7 +27,7 @@
         align-items: center;
         justify-content: space-between;
         flex-direction: row;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
 
         .section-title {
             font-size: 32px;
@@ -42,22 +42,19 @@
 
     .animation-container {
         display: flex;
+        padding: 30px 0px;
+        box-sizing: border-box;
         overflow-x: hidden; // Hide horizontal scrollbar
 
         .cards-container {
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-direction: row;
+            flex-wrap: wrap;
             gap: 20px;
-            animation: scroll var(--animation-duration) linear infinite; // Use CSS variable for animation duration
-
-            &:hover {
-                animation-play-state: paused; // Pause animation on hover
-            }
 
             .card {
-                height: 470px;
+                height: 390px;
                 width: 300px;
                 display: flex;
                 align-items: center;
@@ -88,6 +85,7 @@
                     align-items: center;
                     justify-content: flex-start;
                     flex-direction: column;
+                    margin-top: 10px;
 
                     .product-name {
                         width: 100%;
@@ -96,13 +94,6 @@
                         font-weight: 600;
                         color: $text-brown;
                     }
-
-                    .product-description {
-                        margin-top: 5px;
-                        font-size: 12px;
-                        line-height: 16px;
-                    }
-
                 }
 
                 .view-details-button {

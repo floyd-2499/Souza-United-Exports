@@ -1,0 +1,86 @@
+@import "../../styles/variables.module";
+
+.about-page-main {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+
+    .about-section {
+        width: 100%;
+        min-height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 50px;
+        padding: 50px 20px;
+        box-sizing: border-box;
+
+        .section-title {
+            font-size: 28px;
+            font-weight: 600;
+            color: $text-dark;
+            text-align: center;
+        }
+
+        .section-details {
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 30px;
+            margin: 0px auto;
+
+            .section-description {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                font-size: 16px;
+                line-height: 26px;
+                color: $text-dark;
+            }
+        }
+
+        .people-section {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            gap: 50px;
+            margin-bottom: 50px;
+
+            &-card {
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                flex-direction: column;
+                gap: 10px;
+
+                img {
+                    width: 350px;
+                    height: 350px;
+                    border-radius: 5px;
+                }
+
+                .user-name {
+                    font-size: 18px;
+                    color: $text-dark;
+                }
+
+                .user-title {
+                    font-size: 14px;
+                    color: $text-grey;
+                }
+            }
+        }
+
+    }
+}

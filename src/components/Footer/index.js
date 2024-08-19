@@ -27,7 +27,7 @@ const FooterMain = () => {
                     <div className={styles["column-section"]}>
                         <div className={styles["section-title"]}>Certifications</div>
                         <div className={styles["section-sub-title"]}>Import Export Code (IEC)</div>
-                        <div className={styles["section-text"]}>Certifications</div>
+                        <div className={styles["section-text"]}>AFDFS0085F</div>
                         <div className={styles["section-sub-title"]}>Goods & Service Tax</div>
                         <div className={styles["section-text"]}>29AFDFS0085F1ZY</div>
                     </div>

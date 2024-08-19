@@ -187,7 +187,7 @@ const productsList = [
         usage: []
     },
     {
-        id: 7,
+        id: 8,
         name: "Copper Silk Granite",
         description: "Copper silk granite is a unique natural stone known for its exquisite blend of colors and pattern.it includes swirls of coppery hues mixed with shades of beige brown and sometimes hint of black.",
         category: {
@@ -210,7 +210,7 @@ const productsList = [
         usage: []
     },
     {
-        id: 8,
+        id: 9,
         name: "Tiger Red Granite",
         description: "Tiger Red granite is a stunning natural stone known for its striking appearance and durabilityis prized for its striking color palette, durability, and versatile applications.",
         category: {
@@ -233,7 +233,7 @@ const productsList = [
         usage: []
     },
     {
-        id: 9,
+        id: 10,
         name: "Black Pearl Granite",
         description: "Black Pearl granite is a luxurious and sophisticated natural stone that is highly sought after for its distinctive appearance and durability,prized for its striking appearance, durability, and versatility, making it a popular choice for both residential and commercial applications where elegance and longevity are valued.",
         category: {

@@ -3,22 +3,28 @@
 .products-page-main {
     width: 100%;
     max-width: $max-view-width;
-    min-height: 100vh;
+    height: calc(100vh - 80px);
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
-    flex-direction: column;
+    flex-direction: row;
     padding: 20px;
     box-sizing: border-box;
 
     .products-filters {
-        width: 100%;
+        width: 225px;
+        height: 100%;
         display: flex;
         align-items: flex-start;
         justify-content: flex-start;
-        flex-direction: row;
+        flex-direction: column;
+        padding: 10px;
+        box-sizing: border-box;
+        border-right: 1px solid $faded-border;
+        overflow-x: auto;
 
         .filter-container {
+            width: 100%;
             display: flex;
             align-items: flex-start;
             justify-content: flex-start;
@@ -31,7 +37,7 @@
             }
 
             .filter-dropdown {
-                width: 225px;
+                width: 100%;
 
                 .filter-select {
                     width: 100%;
@@ -47,6 +53,31 @@
                 }
 
             }
+        }
+
+        .filter-items-list {
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            padding: 20px 0px;
+            margin-top: 5px;
+            box-sizing: border-box;
+
+            .filter-item {
+                width: 100%;
+                padding: 7px 10px;
+                box-sizing: border-box;
+                border-radius: 4px;
+                color: $text-grey;
+                cursor: pointer;
+
+                &:hover {
+                    color: $text-highlight;
+                    background-color: $creamy-bg;
+                }
+            }
+
         }
     }
 }

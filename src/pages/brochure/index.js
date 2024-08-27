@@ -6,7 +6,7 @@ const BrochureMain = () => {
         <LayoutMain>
             <div className={styles["brochure-page-main"]}>
                 <iframe
-                    src="https://drive.google.com/file/d/17Bn9c65DlOy0nzQNrBsgz-QjqXOwXvMk/view?usp=drive_link"
+                    src="https://drive.google.com/uc?id=17Bn9c65DlOy0nzQNrBsgz-QjqXOwXvMk"
                     className={styles["brouchure-frame"]}
                 />
             </div>

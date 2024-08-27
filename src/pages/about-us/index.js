@@ -1,9 +1,9 @@
+import Image from "next/image";
 
 import styles from "./styles.module.scss"
 import LayoutMain from "@/components/Layout"
 import Floyd from "../../assets/Floyd.png";
 import Vijesh from "../../assets/Vijesh.png";
-import Image from "next/image";
 
 const AboutUsPage = () => {
     return (

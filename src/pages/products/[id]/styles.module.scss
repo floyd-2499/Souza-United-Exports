@@ -1,0 +1,160 @@
+@import "../../../styles/variables.module";
+
+$image-section-width: 500px;
+
+.details-page {
+    width: 100%;
+    max-width: $max-view-width;
+    height: fit-content;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 50px;
+    margin: 0px auto 50px;
+    padding: 20px;
+    box-sizing: border-box;
+
+    .product-details {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: row;
+        gap: 50px;
+
+        .images-section {
+            width: $image-section-width;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+
+            .master-image {
+                width: 100%;
+                min-height: $image-section-width;
+                border-radius: 10px;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    transition: transform 1s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+
+        .details-section {
+            width: calc(100% - $image-section-width);
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+            gap: 10px;
+
+            .basic-details-section {
+                width: 100%;
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                flex-direction: column;
+                gap: 10px;
+
+                .product-name {
+                    font-size: 32px;
+                    font-weight: 600;
+                    color: $text-brown;
+                }
+
+                .price-section {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    flex-direction: row;
+                    gap: 5px;
+                    margin-top: 10px;
+                    color: $text-brown;
+
+                    .currency {
+                        font-size: 18px;
+
+                    }
+
+                    .actual-price {
+                        font-size: 18px;
+                        text-decoration: line-through;
+                    }
+
+                    .current-price {
+                        font-size: 32px;
+                        font-weight: 600;
+                        padding-left: 5px;
+                        box-sizing: border-box;
+                    }
+
+                    .price-description {
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+                }
+
+                .description-section {
+                    margin-top: 20px;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: $text-dark;
+                }
+            }
+
+            .product-usage-section {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                gap: 10px;
+
+                .usage-card {
+                    width: 90px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 10px;
+                    box-sizing: border-box;
+
+                    .usage-image {
+                        width: 40px;
+                        height: fit-content;
+                    }
+
+                    .usage-description {
+                        width: 100%;
+                        text-align: center;
+                        color: $text-highlight;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .product-stat-section {
+                width: 100%;
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                flex-direction: column;
+                gap: 10px;
+
+                .section-head {
+                    font-size: 18px;
+                    color: $text-dark;
+                    font-weight: 600;
+
+                }
+            }
+        }
+    }
+}

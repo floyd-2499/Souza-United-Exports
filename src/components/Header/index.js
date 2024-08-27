@@ -24,7 +24,7 @@ const HeaderMain = () => {
                     <Link href={"/about-us"} className={styles["menu-item"]}>About Us</Link>
                 </div>
                 <div className={styles["action-items"]}>
-                    <Link href={"/brouchure"} className={styles["menu-item"]}>
+                    <Link href={"/brochure"} className={styles["menu-item"]}>
                         <div className={styles["brouchure-button"]}>Get Brochure</div>
                     </Link>
                     <Link href={"/contact-us"} className={styles["menu-item"]}>

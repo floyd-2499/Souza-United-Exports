@@ -1,3 +1,5 @@
+import { useRouter } from 'next/router';
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import Select from "react-select"
 
@@ -21,6 +23,8 @@ const ProductsMain = () => {
         Description: []
     });
 
+    const router = useRouter();
+
     const handleFilterSelect = (e) => {
         setSelectedFilter(e)
         setSelectedFilterValue("")
@@ -29,6 +33,10 @@ const ProductsMain = () => {
     const handleSelectFilterValue = (e) => {
         setSelectedFilterValue(e)
     }
+
+    const handleRedirect = ({ id }) => {
+        router.push(`/products/${id}`);
+    };
 
     useEffect(() => {
         const uniqueColors = [...new Set(productsList.map(product => product.category.color))];
@@ -54,13 +62,15 @@ const ProductsMain = () => {
     useEffect(() => {
         if (selectedFilter) {
             setItemsList(categories[selectedFilter?.value])
+        } else {
+            setItemsList([])
         }
     }, [selectedFilter])
 
     useEffect(() => {
         if (selectdFilterValue) {
             const products = productsList?.filter((item) =>
-                (item?.category[selectedFilter?.value?.toLowerCase()] === selectdFilterValue) || (item?.pricing[selectedFilter?.value?.toLowerCase()] === selectdFilterValue)
+                (item?.category[selectedFilter?.value?.toLowerCase()] === selectdFilterValue) || (item?.pricing?.current === selectdFilterValue)
             )
 
             setFilteredProducts(products);
@@ -68,8 +78,6 @@ const ProductsMain = () => {
             setFilteredProducts(productsList)
         }
     }, [selectdFilterValue])
-
-    console.log(filteredProducts);
 
     return (
         <LayoutMain>
@@ -100,8 +108,16 @@ const ProductsMain = () => {
                     {filteredProducts?.map((item) => {
                         return (
                             <div className={styles["product-card"]} key={item.id}>
-                                <div className={styles["product-image"]}></div>
-                                <div className={styles["product-name"]}>{item?.name}</div>
+                                <div className={styles["product-card-contents"]}>
+                                    <div className={styles["product-image"]}>
+                                        <Image alt={item.name} src={item?.image} width={300} height={300} />
+                                    </div>
+                                    <div className={styles["product-details"]}>
+                                        <div className={styles["product-name"]}>{item?.name}</div>
+                                        <div className={styles["product-description"]}>{item?.description}</div>
+                                    </div>
+                                </div>
+                                <div className={styles["product-detail-button"]} onClick={() => handleRedirect({ id: item?.name })}>View Details {">>"}</div>
                             </div>
                         )
                     })}

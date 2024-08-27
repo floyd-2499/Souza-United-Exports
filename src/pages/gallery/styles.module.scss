@@ -1,0 +1,11 @@
+@import "../../styles/variables.module";
+
+.gallery-page-main {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}

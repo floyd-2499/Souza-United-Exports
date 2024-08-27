@@ -19,10 +19,10 @@ const AboutUsPage = () => {
                         <div className={styles["section-description"]}>
                             At Souza United Exports, we take pride in offering a curated
                             selection of the finest quality granites sourced directly from our
-                            own quarry. With uncompromising dedication to craftsmanship and sustainability, each slab tells a story of nature's artistry, ready to enhance any architectural masterpiece.
+                            own quarry. With uncompromising dedication to craftsmanship and sustainability, each slab tells a story of nature&apos;s artistry, ready to enhance any architectural masterpiece.
                         </div>
                         <div className={styles["section-description"]}>
-                            Our commitment to excellence extends beyond mere exports. We specialize in providing customizable granite solutions tailored to your unique vision. Whether it's transforming granite into elegant benches, durable footpaths, or majestic monument bases, our skilled artisans ensure every cut reflects your distinct style and purpose.
+                            Our commitment to excellence extends beyond mere exports. We specialize in providing customizable granite solutions tailored to your unique vision. Whether it&apos;s transforming granite into elegant benches, durable footpaths, or majestic monument bases, our skilled artisans ensure every cut reflects your distinct style and purpose.
                         </div>
                         <div className={styles["section-description"]}>
                             Step into a world of possibilities with Souza United Exports. Experience the beauty, durability, and versatility of our granites, meticulously crafted to elevate your projects to new heights of sophistication.

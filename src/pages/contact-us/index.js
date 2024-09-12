@@ -1,9 +1,51 @@
 import Link from "next/link"
 
+import { AiOutlineMedium } from "react-icons/ai";
+import { BsTwitterX } from "react-icons/bs";
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+
 import styles from "./styles.module.scss"
 import LayoutMain from "@/components/Layout"
 import QRCode from "../../assets/QR-Code.svg"
 import Image from "next/image"
+
+export const socialMediaDetails = [
+    {
+        id: 1,
+        name: "Facebook",
+        icon: <FaFacebook />,
+        link: "https://www.facebook.com/profile.php?id=61563545483353&mibextid=ZbWKwL",
+        active: true
+    },
+    {
+        id: 2,
+        name: "Instagram",
+        icon: <FaInstagram />,
+        link: "https://www.instagram.com/souzaunitedexports/",
+        active: true
+    },
+    {
+        id: 3,
+        name: "Twitter-X",
+        icon: <BsTwitterX />,
+        link: "https://x.com/_Souza_United",
+        active: true
+    },
+    {
+        id: 4,
+        name: "Linkedin",
+        icon: <FaLinkedin />,
+        link: "https://www.linkedin.com/in/souza-united-exports-47873a27a/",
+        active: true
+    },
+    {
+        id: 5,
+        name: "Medium",
+        icon: <AiOutlineMedium />,
+        link: "https://medium.com/@souzaunitedexports",
+        active: true
+    },
+]
 
 const ContactUsMain = () => {
     return (
@@ -30,8 +72,13 @@ const ContactUsMain = () => {
                             <div className={styles["detail-item"]}>Udupi District, Karnataka, India - 574104</div>
                         </div>
                         <div className={styles['social-media-container']}>
-                            <Link href="" className={styles["media-item"]}>
-                            </Link>
+                            {socialMediaDetails?.map(media => {
+                                return (
+                                    <Link key={media?.id} href={media?.active && media?.link} className={styles["media-item"]} target="_blank">
+                                        {media?.icon}
+                                    </Link>
+                                )
+                            })}
                         </div>
                     </div>
                 </div>

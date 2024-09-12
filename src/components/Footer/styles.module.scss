@@ -42,6 +42,9 @@
                     font-size: 18px;
                     font-weight: 600;
                     margin-bottom: 10px;
+                    padding-bottom: 3px;
+                    box-sizing: border-box;
+                    border-bottom: 3px solid $primary-border;
                 }
 
                 .section-text {
@@ -66,14 +69,15 @@
                     flex-direction: row;
                     gap: 25px;
 
-                    .media-icon {
+                    .media-item {
                         margin: 10px 0px;
-                        color: $text-grey;
+                        color: $text-dark;
+                        font-size: 24px;
                         text-decoration: none;
                         cursor: pointer;
 
                         &:hover {
-                            color: $text-brown;
+                            color: $text-highlight;
                         }
                     }
                 }

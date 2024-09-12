@@ -5,19 +5,22 @@ import styles from "./styles.module.scss"
 import LayoutMain from '@/components/Layout';
 import productsList from '@/library/products';
 import Image from 'next/image';
+import useCasesData from '@/library/useCase';
 
 const ProductDetails = () => {
     const [relatedProducts, setRelatedProducts] = useState([])
+    const [usageDetails, setUsageDetails] = useState([])
 
     const router = useRouter();
     const { id: productName } = router.query;
 
     const product = productsList?.find(item => item?.name === productName)
 
-    console.log(product);
 
     useEffect(() => {
-        setRelatedProducts([])
+        const filteredObjects = useCasesData.filter(item => product?.usage?.includes(item.identifier));
+
+        setUsageDetails(filteredObjects)
     }, [])
 
     return (
@@ -40,18 +43,42 @@ const ProductDetails = () => {
                             </div>
                             <div className={styles["description-section"]}>{product?.description}</div>
                         </div>
-                        <div className={styles["product-usage-section"]}>
-                            <div className={styles["usage-card"]}>
-                                <div className={styles["usage-image"]}></div>
-                                <div className={styles["usage-description"]}></div>
-                            </div>
-                        </div>
+
+                        {/* Stats */}
                         <div className={styles["product-stat-section"]}>
                             <div className={styles["section-head"]}>Available sizes</div>
-                            <div className={styles["size-section"]}>
-                                <div className={styles["size-number"]}></div>
-                                <div className={styles["size-description"]}></div>
-                                <div className={styles["size-thickness"]}></div>
+                            {!product?.showSizeDetails && (
+                                <div className={styles["section-description"]}>
+                                    We provide {product?.name?.toLocaleLowerCase()} based on customer requirements.
+                                </div>
+                            )}
+                            {product?.showSizeDetails && (
+                                <div className={styles["section-items-table"]}>
+                                    {product?.mesurement?.map((item, index) => {
+                                        return (
+                                            <div className={styles["size-section"]} key={index}>
+                                                <div className={styles["size-number"]}>{item?.type}</div>
+                                                <div className={styles["size-length"]}>{item?.scale}{" "}{item?.description}</div>
+                                                <div className={styles["size-thickness"]}>{item?.thickness}</div>
+                                            </div>
+                                        )
+                                    })}
+                                </div>
+                            )}
+                        </div>
+
+                        {/* Usage */}
+                        <div className={styles["product-usage-section"]}>
+                            <div className={styles["section-head"]}>Usages</div>
+                            <div className={styles["usage-container"]}>
+                                {usageDetails?.map(item => {
+                                    return (
+                                        <div className={styles["usage-card"]} key={item?.id}>
+                                            <Image className={styles["usage-image"]} alt={item?.name} src={item?.image} width={60} height={60} />
+                                            <div className={styles["usage-description"]}>{item?.name}</div>
+                                        </div>
+                                    )
+                                })}
                             </div>
                         </div>
                     </div>

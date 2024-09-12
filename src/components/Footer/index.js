@@ -4,6 +4,7 @@ import Image from "next/image"
 import styles from "./styles.module.scss"
 import LogoIcon from "../../assets/Logo-Icon.svg"
 import classNames from "classnames"
+import { socialMediaDetails } from "@/pages/contact-us"
 
 const FooterMain = () => {
     return (
@@ -54,11 +55,13 @@ const FooterMain = () => {
                     <div className={styles["column-section"]}>
                         <div className={styles["section-title"]}>Connect Us</div>
                         <div className={styles["social-media-section"]}>
-                            <Link href={"/"} className={styles["media-icon"]}>F</Link>
-                            <Link href={"/"} className={styles["media-icon"]}>I</Link>
-                            <Link href={"/"} className={styles["media-icon"]}>L</Link>
-                            <Link href={"/"} className={styles["media-icon"]}>X</Link>
-                            <Link target="_blank" href={"https://medium.com/@souzaunitedexports/why-south-indian-granites-are-better-3f28a669ffa1"} className={styles["media-icon"]}>M</Link>
+                            {socialMediaDetails?.map(media => {
+                                return (
+                                    <Link key={media?.id} href={media?.active && media?.link} className={styles["media-item"]} target="_blank">
+                                        {media?.icon}
+                                    </Link>
+                                )
+                            })}
                         </div>
                     </div>
                 </div>

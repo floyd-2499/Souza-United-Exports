@@ -1,8 +1,9 @@
 import Link from "next/link"
 import Image from "next/image"
 
-import styles from "./styles.module.scss"
-import LogoIcon from "../../assets/Logo-Icon.svg"
+import styles from "./styles.module.scss";
+import LogoIcon from "../../assets/Logo-Icon.svg";
+// import Brochure from "../../assets/docs/brochure.pdf" 
 
 const HeaderMain = () => {
     return (
@@ -24,7 +25,7 @@ const HeaderMain = () => {
                     <Link href={"/about-us"} className={styles["menu-item"]}>About Us</Link>
                 </div>
                 <div className={styles["action-items"]}>
-                    <Link href={"/brochure"} className={styles["menu-item"]}>
+                    <Link href="/docs/brochure.pdf" target="_blank" className={styles["menu-item"]} passHref>
                         <div className={styles["brouchure-button"]}>Get Brochure</div>
                     </Link>
                     <Link href={"/contact-us"} className={styles["menu-item"]}>

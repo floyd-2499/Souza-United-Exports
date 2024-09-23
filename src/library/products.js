@@ -148,7 +148,7 @@ const productsList = [
                 description: ""
             },
         ],
-        usage: ["FLOOR", "WALL_CLADDING", "WALL_CLADDING"]
+        usage: ["FLOOR", "WALL_CLADDING", "COUNTER_TOPS"]
     },
     {
         id: 6,

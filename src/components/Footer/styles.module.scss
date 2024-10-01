@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-top: 50px;
+    padding: 50px 10px 0px;
     box-sizing: border-box;
     border-top: 1px solid $faded-border;
 
@@ -120,7 +120,6 @@
                 }
             }
         }
-
     }
 
     .footer-bottom-section {
@@ -157,6 +156,50 @@
                 &:first-child {
                     border-right: 2px solid $faded-border;
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: $tab) {
+    .footer-main {
+        .footer-contents {
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 80px;
+
+            .footer-column {
+                align-items: center;
+                gap: 80px;
+
+                .column-section {
+                    width: 100%;
+                    align-items: center;
+                    gap: 20px;
+                    text-align: center;
+
+                    .contact-section,
+                    .address-section {
+                        width: 100%;
+
+                        .contact-line,
+                        .address-line {
+                            width: 100%;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-bottom-section {
+            margin-top: 20px;
+            align-items: center;
+            justify-content: center;
+
+            .terms-section {
+                justify-content: center;
             }
         }
     }

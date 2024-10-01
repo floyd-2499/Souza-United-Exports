@@ -1,9 +1,10 @@
 import Link from "next/link"
 import Image from "next/image"
 
+import classNames from "classnames"
+
 import styles from "./styles.module.scss"
 import LogoIcon from "../../assets/Logo-Icon.svg"
-import classNames from "classnames"
 import { socialMediaDetails } from "@/pages/contact-us"
 
 const FooterMain = () => {

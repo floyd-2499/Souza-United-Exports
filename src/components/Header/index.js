@@ -50,10 +50,10 @@ const HeaderMain = () => {
                 {showMenus && (
                     <div className={classNames(styles["menu-wrapper"], showMobileHeaders ? styles["menu-wrapper-mobile"] : styles["menu-wrapper-desktop"])}>
                         <div className={styles["menu-contents"]}>
-                            <Link href={"/"} className={styles["menu-item"]}>Home</Link>
-                            <Link href={"/products"} className={styles["menu-item"]}>Products</Link>
-                            <Link href={"/gallery"} className={styles["menu-item"]}>Gallery</Link>
-                            <Link href={"/about-us"} className={styles["menu-item"]}>About Us</Link>
+                            <Link href={"/"} className={styles["menu-item"]} onClick={() => showMobileHeaders && handleMobileMenus()}>Home</Link>
+                            <Link href={"/products"} className={styles["menu-item"]} onClick={() => showMobileHeaders && handleMobileMenus()}>Products</Link>
+                            {/* <Link href={"/gallery"} className={styles["menu-item"]} onClick={() => showMobileHeaders && handleMobileMenus()}>Gallery</Link> */}
+                            <Link href={"/about-us"} className={styles["menu-item"]} onClick={() => showMobileHeaders && handleMobileMenus()}>About Us</Link>
                         </div>
                         <div className={styles["action-items"]}>
                             <Link href="/docs/brochure.pdf" target="_blank" className={styles["menu-item"]} passHref>

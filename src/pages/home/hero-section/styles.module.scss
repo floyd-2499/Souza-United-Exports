@@ -69,6 +69,7 @@
                 z-index: 1;
 
                 .main-text {
+                    width: 95%;
                     font-size: 72px;
                     font-weight: 700;
                     line-height: 80px;
@@ -95,6 +96,74 @@
                     &:hover {
                         background-color: $primary-border;
                         color: $text-white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $tab) {
+    .hero-section-main {
+        .carousel-page {
+            height: 100%;
+
+            &.left,
+            &.right {
+                flex-direction: column;
+            }
+
+            .carousel-image-section {
+                display: none;
+            }
+
+            .carousel-text-section {
+                width: 100%;
+                height: calc(100vh - $header-height);
+
+                .text-contents {
+                    bottom: 100px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $tab) {
+    .hero-section-main {
+        .carousel-page {
+            height: 100%;
+
+            &.left,
+            &.right {
+                flex-direction: column;
+            }
+
+            .carousel-image-section {
+                display: none;
+            }
+
+            .carousel-text-section {
+                width: 100%;
+                height: calc(100vh - $header-height);
+
+                .text-contents {
+                    bottom: 100px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $mobile-horizontal) {
+    .hero-section-main {
+        .carousel-page {
+            .carousel-text-section {
+                .text-contents {
+                    bottom: 40px;
+
+                    .main-text {
+                        font-size: 62px;
                     }
                 }
             }

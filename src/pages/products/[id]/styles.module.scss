@@ -1,6 +1,6 @@
 @import "../../../styles/variables.module";
 
-$image-section-width: 500px;
+$image-section-width: 450px;
 
 .details-page {
     width: 100%;
@@ -186,7 +186,6 @@ $image-section-width: 500px;
                         justify-content: flex-start;
                         flex-direction: row;
 
-
                         .size-number,
                         .size-length,
                         .size-thickness {
@@ -216,7 +215,47 @@ $image-section-width: 500px;
                         }
                     }
                 }
+            }
+        }
+    }
+}
 
+@media (max-width: $tab) {
+    .details-page {
+        .product-details {
+            flex-direction: column;
+
+            .details-section {
+                width: 100%;
+
+                .product-usage-section {
+                    .usage-container {
+                        flex-wrap: wrap;
+                    }
+                }
+
+                .product-stat-section {
+                    .section-items-table {
+                        .size-section {
+                            width: 100%;
+                            flex-wrap: wrap;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $mobile-horizontal) {
+    .details-page {
+        .product-details {
+            .images-section {
+                width: 100%;
+
+                .master-image {
+                    min-height: 100%;
+                }
             }
         }
     }

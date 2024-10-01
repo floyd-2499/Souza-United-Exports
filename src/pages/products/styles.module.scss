@@ -174,3 +174,16 @@
         }
     }
 }
+
+@media (max-width: $tab-mini) {
+    .products-page-main {
+        flex-direction: column;
+
+        .products-filters {
+            width: 100%;
+            border: none;
+            border-right: none;
+            border-bottom: 1px solid $faded-border;
+        }
+    }
+}

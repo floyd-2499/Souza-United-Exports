@@ -292,9 +292,9 @@ const productsList = [
         },
         mesurement: [
             {
-                type: "",
-                scale: "",
-                thickness: "",
+                type: "Slab",
+                scale: "9*3",
+                thickness: "16-20MM",
                 description: ""
             },
         ],
@@ -304,7 +304,7 @@ const productsList = [
         id: 12,
         name: "Fencing Stone",
         description: "these beautiful stones are made of tall narrow granite and are used for fencing, boundry markers and architectural features.known for its durability. customised based on height required .",
-        image: "https://drive.google.com/uc?id=1NfE6Qj8tOqrHvhBDcjnkVNCRk_iWKvlN",
+        image: "https://drive.google.com/file/d/1wpgRocyA3aahUEi1PZ433OFLnHdzlfFX/view?usp=drive_link",
         showSizeDetails: true,
         category: {
             color: "grey",
@@ -317,9 +317,9 @@ const productsList = [
         },
         mesurement: [
             {
-                type: "",
-                scale: "",
-                thickness: "",
+                type: "Pole",
+                scale: "5fe",
+                thickness: "4 inch",
                 description: ""
             },
         ],
@@ -342,9 +342,9 @@ const productsList = [
         },
         mesurement: [
             {
-                type: "",
-                scale: "",
-                thickness: "",
+                type: "Block",
+                scale: "-",
+                thickness: "-",
                 description: ""
             },
         ],
@@ -367,9 +367,9 @@ const productsList = [
         },
         mesurement: [
             {
-                type: "",
-                scale: "",
-                thickness: "",
+                type: "Block",
+                scale: "Customizable",
+                thickness: "-",
                 description: ""
             },
         ],

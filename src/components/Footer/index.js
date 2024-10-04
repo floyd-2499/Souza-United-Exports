@@ -6,6 +6,7 @@ import classNames from "classnames"
 import styles from "./styles.module.scss"
 import LogoIcon from "../../assets/Logo-Icon.svg"
 import { socialMediaDetails } from "@/pages/contact-us"
+import { externalLinks, uris } from "@/library/uris"
 
 const FooterMain = () => {
     return (
@@ -37,21 +38,20 @@ const FooterMain = () => {
                 <div className={styles["footer-column"]}>
                     <div className={styles["column-section"]}>
                         <div className={styles["section-title"]}>Quick links</div>
-                        <Link href={"/"} className={styles["section-link"]}>Home</Link>
-                        <Link href={"/products"} className={styles["section-link"]}>Products</Link>
-                        <Link href={"/gallery"} className={styles["section-link"]}>Gallery</Link>
-                        <Link href={"/about-us"} className={styles["section-link"]}>About Us</Link>
+                        <Link href={uris?.home} className={styles["section-link"]}>Home</Link>
+                        <Link href={uris?.product} className={styles["section-link"]}>Products</Link>
+                        <Link href={uris?.about} className={styles["section-link"]}>About Us</Link>
+                        <Link href={uris?.contact} className={styles["section-link"]}>Contact Us</Link>
                     </div>
                     <div className={styles["column-section"]}>
                         <div className={styles["section-title"]}>Documents</div>
-                        <Link href={"/"} className={styles["section-link"]}>Brouchure</Link>
-                        <Link href={"/"} className={styles["section-link"]}>Catologue</Link>
+                        <Link href={uris?.brochure} className={styles["section-link"]}>Brouchure</Link>
                     </div>
                 </div>
                 <div className={styles["footer-column"]}>
                     <div className={styles["column-section"]}>
                         <div className={styles["section-title"]}>Blog</div>
-                        <Link href={"/"} className={styles["section-link"]}>Blog1......</Link>
+                        <Link href={externalLinks?.blogs?.blog1} className={styles["section-link"]}>Granites</Link>
                     </div>
                     <div className={styles["column-section"]}>
                         <div className={styles["section-title"]}>Connect Us</div>

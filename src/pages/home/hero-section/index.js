@@ -16,7 +16,7 @@ const carouselContents = [
         description: "Discover our premium granite countertops, crafted for timeless elegance and durability.",
         // button: "Explore Kitchen Granite",
         button: "Explore Collections",
-        image: HeroKitchenCountertop,
+        image: "https://drive.google.com/uc?id=1MPdh9i3yjAhdQOuiPxtWLUia-u9pl2x4",
         redirect: uris?.product,
         position: "left"
     },
@@ -26,7 +26,7 @@ const carouselContents = [
         description: "Create a spa-like retreat with our luxurious granite surfaces.",
         // button: "View Bathroom Collection",
         button: "Explore Collections",
-        image: "https://drive.google.com/file/d/17pWZWGxjqmyNjk9gBbOq9tkmB9OMX8ug/view?usp=drive_link",
+        image: "https://drive.google.com/uc?id=17pWZWGxjqmyNjk9gBbOq9tkmB9OMX8ug",
         redirect: uris?.product,
         position: "right"
     },
@@ -36,7 +36,7 @@ const carouselContents = [
         description: "From patios to garden paths, explore our durable and stylish granite options.",
         // button: "Discover Outdoor Granite",
         button: "Explore Collections",
-        image: "https://drive.google.com/file/d/1K6AZDfN8vs2r69dcaVdhYLBNZJJD_JyF/view?usp=drive_link",
+        image: "https://drive.google.com/uc?id=1K6AZDfN8vs2r69dcaVdhYLBNZJJD_JyF",
         redirect: uris?.product,
         position: "left"
     },
@@ -46,7 +46,7 @@ const carouselContents = [
         description: "Explore our collection of exotic and unique granite for distinctive projects.",
         // button: "Browse Exotic Granite",
         button: "Explore Collections",
-        image: "https://drive.google.com/file/d/1zj30VbkFO1FpM1YfehOAj_Gr3KPq_bUg/view?usp=drive_link",
+        image: "https://drive.google.com/uc?id=1zj30VbkFO1FpM1YfehOAj_Gr3KPq_bUg",
         redirect: uris?.product,
         position: "right"
     },

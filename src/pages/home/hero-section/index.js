@@ -31,7 +31,7 @@ const carouselContents = [
         description: "Discover our premium granite countertops, crafted for timeless elegance and durability.",
         // button: "Explore Kitchen Granite",
         button: "Explore Collections",
-        image: Countertops,
+        image: HeroKitchenCountertop,
         redirect: uris?.product,
         position: "left"
     },

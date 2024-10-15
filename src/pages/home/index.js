@@ -7,8 +7,16 @@ import styles from "./styles.module.scss"
 import LogoIcon from "../../assets/Logo-Icon.svg"
 import TopProductsMain from "./top-products"
 import HeroSectionMain from "./hero-section"
+import { useRouter } from "next/router"
+import { uris } from "@/library/uris"
 
 const HomePage = () => {
+    const router = useRouter()
+
+    const handleNavigate = (redirect) => {
+        router.push(redirect)
+    }
+
     return (
         <LayoutMain>
             <div className={styles["home-page-main"]}>
@@ -26,7 +34,7 @@ const HomePage = () => {
                             <div className={styles["details-area-content"]}>
                                 Our commitment to craftsmanship and sustainability means that each product, from elegant benches to durable footpaths and majestic monument bases, is meticulously crafted to enhance your architectural projects. Discover the beauty, durability, and versatility of our granites, and elevate your designs to new heights of sophistication.
                             </div>
-                            <div className={styles["redirect-button"]}>
+                            <div className={styles["redirect-button"]} onClick={() => handleNavigate(uris?.about)}>
                                 Read more <div className={styles["button-icon"]}><HiOutlineArrowNarrowRight /></div>
                             </div>
                         </div>

@@ -49,12 +49,12 @@ const AboutUsPage = () => {
                     <div className={styles["section-title"]}>Our Team</div>
                     <div className={styles["people-section"]}>
                         <div className={styles["people-section-card"]}>
-                            <Image className={styles["people-image"]} alt="Vijesh Sharvin Dsouza" src={Vijesh} width={400} height={400} />
+                            <Image className={styles["people-image"]} alt="Vijesh Sharvin Dsouza" src={Vijesh} width={1000} height={1000} />
                             <div className={styles["user-name"]}>Vijesh Sharvin Dsouza</div>
                             <div className={styles["user-title"]}>CEO</div>
                         </div>
                         <div className={styles["people-section-card"]}>
-                            <Image className={styles["people-image"]} alt="Floyd Manuel Dsouza" src={Floyd} width={400} height={400} />
+                            <Image className={styles["people-image"]} alt="Floyd Manuel Dsouza" src={Floyd} width={1000} height={1000} />
                             <div className={styles["user-name"]}>Floyd Manuel Dsouza</div>
                             <div className={styles["user-title"]}>CTO</div>
                         </div>

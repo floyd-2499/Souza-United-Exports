@@ -110,7 +110,7 @@ const ProductsMain = () => {
                             <div className={styles["product-card"]} key={item.id}>
                                 <div className={styles["product-card-contents"]}>
                                     <div className={styles["product-image"]}>
-                                        <Image alt={item.name} src={item?.image} width={300} height={300} />
+                                        <Image alt={item.name} src={item?.image} width={1400} height={1400} />
                                     </div>
                                     <div className={styles["product-details"]}>
                                         <div className={styles["product-name"]}>{item?.name}</div>

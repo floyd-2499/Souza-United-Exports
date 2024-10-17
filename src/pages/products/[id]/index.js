@@ -29,7 +29,7 @@ const ProductDetails = () => {
                 <div className={styles["product-details"]}>
                     <div className={styles["images-section"]}>
                         <div className={styles["master-image"]}>
-                            <Image alt={product?.name} src={product?.image} width={400} height={400} />
+                            <Image alt={product?.name} src={product?.image} width={1000} height={1000} />
                         </div>
                     </div>
                     <div className={styles["details-section"]}>

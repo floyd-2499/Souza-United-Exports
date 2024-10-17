@@ -30,7 +30,7 @@ const TopProductsMain = () => {
                 <div className={styles["cards-container"]} id="cardsContainer">
                     {topProducts.map((item, index) => (
                         <div className={styles["card"]} key={index} onClick={() => handleRedirect({ id: item?.name })}>
-                            <div className={styles["image-section"]}><Image alt={item.name} src={item?.image} width={250} height={250} /></div>
+                            <div className={styles["image-section"]}><Image alt={item.name} src={item?.image} width={1000} height={1000} /></div>
                             <div className={styles["description-section"]}>
                                 <div className={styles["product-name"]}>
                                     {item.name}

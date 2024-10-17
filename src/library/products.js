@@ -1,3 +1,5 @@
+import FencingStone from "../assets/collection/Fencing-Stone.png"
+
 // Schema
 // {
 //     id: number,
@@ -304,7 +306,7 @@ const productsList = [
         id: 12,
         name: "Fencing Stone",
         description: "these beautiful stones are made of tall narrow granite and are used for fencing, boundry markers and architectural features.known for its durability. customised based on height required .",
-        image: "https://drive.google.com/file/d/1wpgRocyA3aahUEi1PZ433OFLnHdzlfFX/view?usp=drive_link",
+        image: FencingStone,
         showSizeDetails: true,
         category: {
             color: "grey",

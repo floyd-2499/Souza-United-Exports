@@ -64,8 +64,8 @@ const productsList = [
             demand: 5
         },
         pricing: {
-            actual: "210",
-            current: "190",
+            actual: "180",
+            current: "130",
             description: "sq.ft"
         },
         mesurement: [

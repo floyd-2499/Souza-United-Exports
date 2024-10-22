@@ -1,11 +1,29 @@
 import { useRouter } from 'next/router';
-import Image from "next/image";
 import { useEffect, useState } from "react";
+
 import Select from "react-select"
+import Image from "next/image";
 
 import styles from "./styles.module.scss"
 import LayoutMain from "@/components/Layout";
 import productsList from "@/library/products";
+import { FaStar } from 'react-icons/fa6';
+
+const FilterItem = ({ type, value }) => {
+
+    return (
+        <>
+            {type?.value === "Demand" && (
+                <>
+                    <FaStar className={styles["star-icon"]} />
+                </>
+            )}
+            <div className={styles['filter-item-value']}>
+                {value}
+            </div>
+        </>
+    )
+}
 
 const ProductsMain = () => {
     const [itemsList, setItemsList] = useState([])
@@ -39,16 +57,21 @@ const ProductsMain = () => {
     };
 
     useEffect(() => {
-        const uniqueColors = [...new Set(productsList.map(product => product.category.color))];
-        const uniqueDemands = [...new Set(productsList.map(product => product.category.demand))];
-        const uniquePrices = [...new Set(productsList.map(product => product.pricing.current))];
+        const uniqueColors = [...new Set(productsList.map(product => product?.category?.color))]
+            .sort((a, b) => a.localeCompare(b));
+
+        const uniqueDemands = [...new Set(productsList.map(product => product?.category?.demand))]
+            .sort((a, b) => b - a);
+
+        const uniquePrices = [...new Set(productsList.map(product => product?.pricing?.current))]
+            .sort((a, b) => a - b);
 
         setCategories({
             Color: uniqueColors,
             Demand: uniqueDemands,
             Price: uniquePrices,
         });
-    }, [setCategories]);
+    }, [productsList, setCategories]);
 
     useEffect(() => {
         const structuredFilters = Object.keys(categories).map(key => ({
@@ -99,7 +122,9 @@ const ProductsMain = () => {
                     <div className={styles["filter-items-list"]}>
                         {itemsList?.map((item, index) => {
                             return (
-                                <div className={styles["filter-item"]} key={index} onClick={() => handleSelectFilterValue(item)}>{item}</div>
+                                <div className={styles["filter-item"]} key={index} onClick={() => handleSelectFilterValue(item)}>
+                                    <FilterItem type={selectedFilter} value={item} />
+                                </div>
                             )
                         })}
                     </div>

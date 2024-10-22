@@ -67,6 +67,10 @@
 
             .filter-item {
                 width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 10px;
                 padding: 7px 10px;
                 box-sizing: border-box;
                 border-radius: 4px;
@@ -76,6 +80,13 @@
                 &:hover {
                     color: $text-highlight;
                     background-color: $creamy-bg;
+                }
+
+                .filter-item-value {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: -3px;
                 }
             }
 

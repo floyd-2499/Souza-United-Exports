@@ -34,7 +34,7 @@ const productsList = [
         image: "https://drive.google.com/uc?id=1KjUwkaouuAaoow-8ruXnbaoXfNUkfov1",
         showSizeDetails: true,
         category: {
-            color: "black",
+            color: "Black",
             demand: 5
         },
         pricing: {
@@ -60,7 +60,7 @@ const productsList = [
         showSizeDetails: true,
         category: {
             color: "White",
-            demand: 5
+            demand: 3
         },
         pricing: {
             actual: "150",
@@ -85,7 +85,7 @@ const productsList = [
         showSizeDetails: true,
         category: {
             color: "Green",
-            demand: 5
+            demand: 2
         },
         pricing: {
             actual: "200",
@@ -110,7 +110,7 @@ const productsList = [
         showSizeDetails: true,
         category: {
             color: "Blue",
-            demand: 5
+            demand: 3
         },
         pricing: {
             actual: "180",
@@ -135,7 +135,7 @@ const productsList = [
         showSizeDetails: true,
         category: {
             color: "Red",
-            demand: 5
+            demand: 4
         },
         pricing: {
             actual: "80",
@@ -160,7 +160,7 @@ const productsList = [
         showSizeDetails: true,
         category: {
             color: "Brown",
-            demand: 5
+            demand: 4
         },
         pricing: {
             actual: "100",
@@ -209,7 +209,7 @@ const productsList = [
         image: "https://drive.google.com/uc?id=1O3JFE-5-A4npRnW8cBw4JPw9XZch4n8A",
         showSizeDetails: true,
         category: {
-            color: "red",
+            color: "Red",
             demand: 5
         },
         pricing: {
@@ -234,7 +234,7 @@ const productsList = [
         image: "https://drive.google.com/uc?id=1TcTVMC784LmcvDrYvJnmMPxUyQ6J5VDu",
         showSizeDetails: true,
         category: {
-            color: "black",
+            color: "Black",
             demand: 5
         },
         pricing: {
@@ -259,7 +259,7 @@ const productsList = [
         image: "https://drive.google.com/uc?id=1lwhrPULQT4z-ppq44r7Jf6fzAp4MAZoZ",
         showSizeDetails: true,
         category: {
-            color: "grey",
+            color: "Grey",
             demand: 5
         },
         pricing: {
@@ -284,8 +284,8 @@ const productsList = [
         image: "https://drive.google.com/uc?id=1KGGB0YU8MGlYdu2JGMIvdDgA9rSwhbdk",
         showSizeDetails: false,
         category: {
-            color: "grey",
-            demand: 5
+            color: "Grey",
+            demand: 3
         },
         pricing: {
             actual: "200",
@@ -309,7 +309,7 @@ const productsList = [
         image: FencingStone,
         showSizeDetails: true,
         category: {
-            color: "grey",
+            color: "Grey",
             demand: 5
         },
         pricing: {
@@ -334,7 +334,7 @@ const productsList = [
         image: "https://drive.google.com/uc?id=1x_7Oo7c3A6BOBmSpGffTpKiBfkgX4jKK",
         showSizeDetails: false,
         category: {
-            color: "grey",
+            color: "Grey",
             demand: 5
         },
         pricing: {
@@ -359,8 +359,8 @@ const productsList = [
         image: "https://drive.google.com/uc?id=1AlMHDd4bzsUXros0RGCgHF9hzY42QHKt",
         showSizeDetails: false,
         category: {
-            color: "grey",
-            demand: 5
+            color: "Grey",
+            demand: 3
         },
         pricing: {
             actual: "250",
@@ -384,7 +384,7 @@ const productsList = [
         image: "https://drive.google.com/uc?id=1MxCdvW87yBjAASmT8Nsw7gD8oB76wkjv",
         showSizeDetails: false,
         category: {
-            color: "multi",
+            color: "Multi - Colours",
             demand: 5
         },
         pricing: {

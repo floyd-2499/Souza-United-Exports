@@ -1,4 +1,5 @@
 import FencingStone from "../assets/collection/Fencing-Stone.png"
+import VizagBlue from "../assets/collection/Vizag-Blue.png"
 
 // Schema
 // {
@@ -104,9 +105,9 @@ const productsList = [
     },
     {
         id: 4,
-        name: "Blue Sapphire Granite",
+        name: "Blue Sapphire | Vizag Blue Granite",
         description: "Blue sapphire granite is an elegant combination of blue,grey,black and brown. this durable and versatile granite features a small intricate pattern of flecks, and is suited for use as granite countertops,backsplashes and more.",
-        image: "https://drive.google.com/uc?id=1L1geSVw3QRS8gNH_TnoelT_t5QXP_Vsi",
+        image: VizagBlue,
         showSizeDetails: true,
         category: {
             color: "Blue",

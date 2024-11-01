@@ -46,7 +46,7 @@ const productsList = [
         mesurement: [
             {
                 type: "Pole",
-                scale: "5fe",
+                scale: "5.5 ft",
                 thickness: "4 inch",
                 description: ""
             },
@@ -64,7 +64,7 @@ const productsList = [
             demand: 5
         },
         pricing: {
-            actual: "180",
+            actual: "165",
             current: "130",
             description: "sq.ft"
         },
@@ -139,8 +139,8 @@ const productsList = [
             demand: 3
         },
         pricing: {
-            actual: "180",
-            current: "150",
+            actual: "125",
+            current: "95",
             description: "sq.ft"
         },
         mesurement: [
@@ -289,8 +289,8 @@ const productsList = [
             demand: 5
         },
         pricing: {
-            actual: "150",
-            current: "120",
+            actual: "120",
+            current: "90",
             description: "sq.ft"
         },
         mesurement: [
@@ -305,7 +305,7 @@ const productsList = [
     },
     {
         id: 12,
-        name: "Unpolished Slab(Raw)",
+        name: "Unpolished Slab (Raw)",
         description: "Freshly cut beautiful stones are often used in construction, landscaping, or other applications where a natural, unrefined look is desired. They are also the starting material for fabricators who will further cut, polish, or finish the stone according to specific project requirements.",
         image: "https://drive.google.com/uc?id=1KGGB0YU8MGlYdu2JGMIvdDgA9rSwhbdk",
         showSizeDetails: false,

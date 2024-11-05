@@ -97,3 +97,42 @@
         }
     }
 }
+
+@media (max-width: $tab-mini) {
+    .contact-page-main {
+        .contact-card-container {
+            flex-direction: column;
+            height: fit-content;
+            margin: 50px auto;
+
+            .qr-container {
+                width: 100%;
+                max-width: 300px;
+                border: none;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .contact-details {
+                width: 100%;
+                align-items: center;
+                padding: 20px 10px;
+
+                .detail-wrapper {
+                    align-items: center;
+
+                    .detail-item {
+                        text-align: center;
+                    }
+                }
+
+                .social-media-container {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

@@ -107,7 +107,7 @@
 
         .product-card {
             width: 325px;
-            height: 550px;
+            height: 600px;
             display: flex;
             align-items: flex-start;
             justify-content: space-between;
@@ -157,6 +157,19 @@
                         font-size: 20px;
                         font-weight: 600;
                         color: $text-dark;
+                    }
+
+                    .product-price {
+                        margin: 10px 0px;
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: $text-dark;
+
+                        .current-price {
+                            font-size: 24px;
+                            color: $text-brown;
+                            padding: 0px 5px;
+                        }
                     }
 
                     .product-description {

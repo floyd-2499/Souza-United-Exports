@@ -10,7 +10,6 @@ import productsList from "@/library/products";
 import { FaStar } from 'react-icons/fa6';
 
 const FilterItem = ({ type, value }) => {
-
     return (
         <>
             {type?.value === "Demand" && (
@@ -18,9 +17,19 @@ const FilterItem = ({ type, value }) => {
                     <FaStar className={styles["star-icon"]} />
                 </>
             )}
+            {type?.value === "Price" && (
+                <>
+                    ₹
+                </>
+            )}
             <div className={styles['filter-item-value']}>
                 {value}
             </div>
+            {type?.value === "Price" && (
+                <>
+                    /sq.ft.
+                </>
+            )}
         </>
     )
 }
@@ -139,6 +148,7 @@ const ProductsMain = () => {
                                     </div>
                                     <div className={styles["product-details"]}>
                                         <div className={styles["product-name"]}>{item?.name}</div>
+                                        <div className={styles["product-price"]}>₹<span className={styles["current-price"]}>{item?.pricing?.current}</span>/{item?.pricing?.description}</div>
                                         <div className={styles["product-description"]}>{item?.description}</div>
                                     </div>
                                 </div>

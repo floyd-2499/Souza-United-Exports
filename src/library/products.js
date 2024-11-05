@@ -41,7 +41,7 @@ const productsList = [
         pricing: {
             actual: "250",
             current: "200",
-            description: "Per stone"
+            description: "Stone"
         },
         mesurement: [
             {
@@ -66,7 +66,7 @@ const productsList = [
         pricing: {
             actual: "165",
             current: "130",
-            description: "sq.ft"
+            description: "sq.ft."
         },
         mesurement: [
             {
@@ -80,18 +80,18 @@ const productsList = [
     },
     {
         id: 3,
-        name: "Viscount White",
-        description: "Viscount white is a popular granite that features swirls of white, grey and black hues that flow together beautifully. this granite is suitable for any projects including counter tops, showe walls,shower seats.",
-        image: "https://drive.google.com/uc?id=1T55vmVY3FM4nib7iStRY3A9YVtJGPn7x",
+        name: "Black Pearl Granite",
+        description: "Black Pearl granite is a luxurious and sophisticated natural stone that is highly sought after for its distinctive appearance and durability,prized for its striking appearance, durability, and versatility, making it a popular choice for both residential and commercial applications where elegance and longevity are valued.",
+        image: "https://drive.google.com/uc?id=1TcTVMC784LmcvDrYvJnmMPxUyQ6J5VDu",
         showSizeDetails: true,
         category: {
-            color: "White",
-            demand: 3
+            color: "Black",
+            demand: 5
         },
         pricing: {
-            actual: "150",
+            actual: "140",
             current: "120",
-            description: "sq.ft"
+            description: "sq.ft."
         },
         mesurement: [
             {
@@ -101,35 +101,10 @@ const productsList = [
                 description: ""
             },
         ],
-        usage: ["COUNTER_TOPS", "FLOOR", "WALL_CLADDING", "STAIRS"]
+        usage: ["COUNTER_TOPS", "FLOOR", "WALL_CLADDING", "GRAVEYARD", "STAIRS"]
     },
     {
         id: 4,
-        name: "Hassan Green Granite",
-        description: "Hassan green granite is a type of granite known for its greenish hue and speckled pattern valued for its unique coloration, durability and versatility in architectural and design applications.",
-        image: "https://drive.google.com/uc?id=1rMgZyxWqelmsJO6N60C0dacv_5RtkVtw",
-        showSizeDetails: true,
-        category: {
-            color: "Green",
-            demand: 2
-        },
-        pricing: {
-            actual: "200",
-            current: "180",
-            description: "sq.ft"
-        },
-        mesurement: [
-            {
-                type: "Slab",
-                scale: "9*3",
-                thickness: "16-20MM",
-                description: ""
-            },
-        ],
-        usage: ["COUNTER_TOPS", "FLOOR", "WALL_CLADDING", "STAIRS"]
-    },
-    {
-        id: 5,
         name: "Blue Sapphire | Vizag Blue Granite",
         description: "Blue sapphire granite is an elegant combination of blue,grey,black and brown. this durable and versatile granite features a small intricate pattern of flecks, and is suited for use as granite countertops,backsplashes and more.",
         image: VizagBlue,
@@ -141,7 +116,7 @@ const productsList = [
         pricing: {
             actual: "125",
             current: "95",
-            description: "sq.ft"
+            description: "sq.ft."
         },
         mesurement: [
             {
@@ -154,19 +129,19 @@ const productsList = [
         usage: ["COUNTER_TOPS", "FLOOR", "WALL_CLADDING"]
     },
     {
-        id: 6,
-        name: "Imperial Red",
-        description: "Imperial red granite is a striking natural stone known for its deep red and pinkish tones, popular for both interior and exterior applications due to its durability and aesthetic appeal.",
-        image: "https://drive.google.com/uc?id=1zU_T0Fqr9h19PLF-4qUVRMihiuVH15xR",
+        id: 5,
+        name: "Chima Pink Granite",
+        description: "Chima pink granite is a beautiful natural stone known for its distinctive pink coloration with grey veins and specks.the unique color and pattern make it popular choice for addding warmth and elegance to residential and commercial spaces .",
+        image: "https://drive.google.com/uc?id=1h3tLhfZbpsyehZ9niKjUWUvtHppsdgFl",
         showSizeDetails: true,
         category: {
-            color: "Red",
-            demand: 4
+            color: "Pink",
+            demand: 5
         },
         pricing: {
-            actual: "80",
-            current: "100",
-            description: "sq.ft"
+            actual: "100",
+            current: "80",
+            description: "sq.ft."
         },
         mesurement: [
             {
@@ -176,7 +151,32 @@ const productsList = [
                 description: ""
             },
         ],
-        usage: ["FLOOR", "WALL_CLADDING", "COUNTER_TOPS"]
+        usage: ["COUNTER_TOPS", "FLOOR", "WALL_CLADDING", "WALL_CLADDING"]
+    },
+    {
+        id: 6,
+        name: "Paradiso Granite",
+        description: "Paradiso granite is a type of natural stone known for its striking appearance, primarily quarried in India. It is characterized by its swirling patterns of dark and light colors, usually combining shades of deep purple, grey, and black with streaks of white or light pink. ",
+        image: "https://drive.google.com/uc?id=1lwhrPULQT4z-ppq44r7Jf6fzAp4MAZoZ",
+        showSizeDetails: true,
+        category: {
+            color: "Grey",
+            demand: 5
+        },
+        pricing: {
+            actual: "120",
+            current: "90",
+            description: "sq.ft."
+        },
+        mesurement: [
+            {
+                type: "Slab",
+                scale: "9*3",
+                thickness: "16-20MM",
+                description: ""
+            },
+        ],
+        usage: ["FLOOR", "WALL_CLADDING", "COUNTER_TOPS", "STAIRS"]
     },
     {
         id: 7,
@@ -191,7 +191,7 @@ const productsList = [
         pricing: {
             actual: "100",
             current: "80",
-            description: "sq.ft"
+            description: "sq.ft."
         },
         mesurement: [
             {
@@ -205,18 +205,18 @@ const productsList = [
     },
     {
         id: 8,
-        name: "Chima Pink Granite",
-        description: "Chima pink granite is a beautiful natural stone known for its distinctive pink coloration with grey veins and specks.the unique color and pattern make it popular choice for addding warmth and elegance to residential and commercial spaces .",
-        image: "https://drive.google.com/uc?id=1h3tLhfZbpsyehZ9niKjUWUvtHppsdgFl",
+        name: "Hassan Green Granite",
+        description: "Hassan green granite is a type of granite known for its greenish hue and speckled pattern valued for its unique coloration, durability and versatility in architectural and design applications.",
+        image: "https://drive.google.com/uc?id=1rMgZyxWqelmsJO6N60C0dacv_5RtkVtw",
         showSizeDetails: true,
         category: {
-            color: "Pink",
-            demand: 5
+            color: "Green",
+            demand: 2
         },
         pricing: {
-            actual: "100",
-            current: "80",
-            description: "sq.ft"
+            actual: "200",
+            current: "180",
+            description: "sq.ft."
         },
         mesurement: [
             {
@@ -226,10 +226,60 @@ const productsList = [
                 description: ""
             },
         ],
-        usage: ["COUNTER_TOPS", "FLOOR", "WALL_CLADDING", "WALL_CLADDING"]
+        usage: ["COUNTER_TOPS", "FLOOR", "WALL_CLADDING", "STAIRS"]
     },
     {
         id: 9,
+        name: "Viscount White",
+        description: "Viscount white is a popular granite that features swirls of white, grey and black hues that flow together beautifully. this granite is suitable for any projects including counter tops, showe walls,shower seats.",
+        image: "https://drive.google.com/uc?id=1T55vmVY3FM4nib7iStRY3A9YVtJGPn7x",
+        showSizeDetails: true,
+        category: {
+            color: "White",
+            demand: 3
+        },
+        pricing: {
+            actual: "150",
+            current: "120",
+            description: "sq.ft."
+        },
+        mesurement: [
+            {
+                type: "Slab",
+                scale: "9*3",
+                thickness: "16-20MM",
+                description: ""
+            },
+        ],
+        usage: ["COUNTER_TOPS", "FLOOR", "WALL_CLADDING", "STAIRS"]
+    },
+    {
+        id: 10,
+        name: "Imperial Red",
+        description: "Imperial red granite is a striking natural stone known for its deep red and pinkish tones, popular for both interior and exterior applications due to its durability and aesthetic appeal.",
+        image: "https://drive.google.com/uc?id=1zU_T0Fqr9h19PLF-4qUVRMihiuVH15xR",
+        showSizeDetails: true,
+        category: {
+            color: "Red",
+            demand: 4
+        },
+        pricing: {
+            actual: "160",
+            current: "100",
+            description: "sq.ft."
+        },
+        mesurement: [
+            {
+                type: "Slab",
+                scale: "9*3",
+                thickness: "16-20MM",
+                description: ""
+            },
+        ],
+        usage: ["FLOOR", "WALL_CLADDING", "COUNTER_TOPS"]
+    },
+    {
+        id: 11,
         name: "Tiger Red Granite",
         description: "Tiger Red granite is a stunning natural stone known for its striking appearance and durabilityis prized for its striking color palette, durability, and versatile applications.",
         image: "https://drive.google.com/uc?id=1O3JFE-5-A4npRnW8cBw4JPw9XZch4n8A",
@@ -241,7 +291,7 @@ const productsList = [
         pricing: {
             actual: "100",
             current: "80",
-            description: "sq.ft"
+            description: "sq.ft."
         },
         mesurement: [
             {
@@ -252,56 +302,6 @@ const productsList = [
             },
         ],
         usage: ["FLOOR", "WALL_CLADDING"]
-    },
-    {
-        id: 10,
-        name: "Black Pearl Granite",
-        description: "Black Pearl granite is a luxurious and sophisticated natural stone that is highly sought after for its distinctive appearance and durability,prized for its striking appearance, durability, and versatility, making it a popular choice for both residential and commercial applications where elegance and longevity are valued.",
-        image: "https://drive.google.com/uc?id=1TcTVMC784LmcvDrYvJnmMPxUyQ6J5VDu",
-        showSizeDetails: true,
-        category: {
-            color: "Black",
-            demand: 5
-        },
-        pricing: {
-            actual: "100",
-            current: "80",
-            description: "sq.ft"
-        },
-        mesurement: [
-            {
-                type: "Slab",
-                scale: "9*3",
-                thickness: "16-20MM",
-                description: ""
-            },
-        ],
-        usage: ["COUNTER_TOPS", "FLOOR", "WALL_CLADDING", "GRAVEYARD", "STAIRS"]
-    },
-    {
-        id: 11,
-        name: "Paradiso Granite",
-        description: "Paradiso granite is a type of natural stone known for its striking appearance, primarily quarried in India. It is characterized by its swirling patterns of dark and light colors, usually combining shades of deep purple, grey, and black with streaks of white or light pink. ",
-        image: "https://drive.google.com/uc?id=1lwhrPULQT4z-ppq44r7Jf6fzAp4MAZoZ",
-        showSizeDetails: true,
-        category: {
-            color: "Grey",
-            demand: 5
-        },
-        pricing: {
-            actual: "120",
-            current: "90",
-            description: "sq.ft"
-        },
-        mesurement: [
-            {
-                type: "Slab",
-                scale: "9*3",
-                thickness: "16-20MM",
-                description: ""
-            },
-        ],
-        usage: ["FLOOR", "WALL_CLADDING", "COUNTER_TOPS", "STAIRS"]
     },
     {
         id: 12,
@@ -316,7 +316,7 @@ const productsList = [
         pricing: {
             actual: "200",
             current: "180",
-            description: "Per sq.ft"
+            description: "sq.ft."
         },
         mesurement: [
             {
@@ -341,7 +341,7 @@ const productsList = [
         pricing: {
             actual: "20",
             current: "18",
-            description: "Per block"
+            description: "Block"
         },
         mesurement: [
             {
@@ -366,7 +366,7 @@ const productsList = [
         pricing: {
             actual: "250",
             current: "200",
-            description: "The price per square foot is fixed, but the length and breadth can be customized based on the customer's requirements."
+            description: "sq.ft."
         },
         mesurement: [
             {
@@ -391,7 +391,7 @@ const productsList = [
         pricing: {
             actual: "25",
             current: "20",
-            description: "per kg"
+            description: "Kg"
         },
         mesurement: [
             {

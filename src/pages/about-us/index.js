@@ -4,6 +4,7 @@ import styles from "./styles.module.scss"
 import LayoutMain from "@/components/Layout"
 import Floyd from "../../assets/Floyd.png";
 import Vijesh from "../../assets/Vijesh.png";
+import Shreyas from "../../assets/Shreyas.png";
 
 const AboutUsPage = () => {
     return (
@@ -49,14 +50,19 @@ const AboutUsPage = () => {
                     <div className={styles["section-title"]}>Our Team</div>
                     <div className={styles["people-section"]}>
                         <div className={styles["people-section-card"]}>
+                            <Image className={styles["people-image"]} alt="Shreyas Shetty" src={Shreyas} width={1000} height={1000} />
+                            <div className={styles["user-name"]}>Shreyas Shetty</div>
+                            {/* <div className={styles["user-title"]}>CEO</div> */}
+                        </div>
+                        <div className={styles["people-section-card"]}>
                             <Image className={styles["people-image"]} alt="Vijesh Sharvin Dsouza" src={Vijesh} width={1000} height={1000} />
                             <div className={styles["user-name"]}>Vijesh Sharvin Dsouza</div>
-                            <div className={styles["user-title"]}>CEO</div>
+                            {/* <div className={styles["user-title"]}>CEO</div> */}
                         </div>
                         <div className={styles["people-section-card"]}>
                             <Image className={styles["people-image"]} alt="Floyd Manuel Dsouza" src={Floyd} width={1000} height={1000} />
                             <div className={styles["user-name"]}>Floyd Manuel Dsouza</div>
-                            <div className={styles["user-title"]}>CTO</div>
+                            {/* <div className={styles["user-title"]}>CTO</div> */}
                         </div>
                     </div>
                 </div>

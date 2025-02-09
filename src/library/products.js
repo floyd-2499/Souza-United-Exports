@@ -567,7 +567,7 @@ const productsList = [
         showSizeDetails: true,
         category: {
             color: "White",
-            demand: 5
+            demand: 4
         },
         pricing: {
             actual: "",
@@ -592,7 +592,7 @@ const productsList = [
     },
     // Wall Cladding
     {
-        id: 20,
+        id: 21,
         name: "Wall Cladding",
         description: "Durable, decorative covering for walls, available in natural stone, wood, or ceramic materials. Enhances aesthetics while providing protection against weather and wear.",
         image: Wall_Cladding,
@@ -624,7 +624,7 @@ const productsList = [
     },
     // Fencing Stone
     {
-        id: 21,
+        id: 22,
         name: "Fencing Stone",
         description: "these beautiful stones are made of tall narrow granite and are used for fencing, boundry markers and architectural features.known for its durability. customised based on height required .",
         image: FencingStone,
@@ -650,7 +650,7 @@ const productsList = [
     },
     // Unpolished Slab (Raw)
     {
-        id: 22,
+        id: 23,
         name: "Unpolished Slab (Raw)",
         description: "Freshly cut beautiful stones are often used in construction, landscaping, or other applications where a natural, unrefined look is desired. They are also the starting material for fabricators who will further cut, polish, or finish the stone according to specific project requirements.",
         image: "https://drive.google.com/uc?id=1KGGB0YU8MGlYdu2JGMIvdDgA9rSwhbdk",
@@ -675,7 +675,7 @@ const productsList = [
         usage: ["GARDEN_SPACE", "FOOT_PATH", "WALL_CLADDING", "MONUMENTS", "BENCH"]
     },
     {
-        id: 23,
+        id: 24,
         name: "Size Stones ",
         description: "These beautiful stones are used for foundation, flooring, wall cladding and other architectural elements where durability and aesthetic appeal are essential./ .",
         image: "https://drive.google.com/uc?id=1x_7Oo7c3A6BOBmSpGffTpKiBfkgX4jKK",
@@ -700,7 +700,7 @@ const productsList = [
         usage: ["WALL_CLADDING", "FOUNDATIONS", "FENCING", "BRICK_WALL"]
     },
     {
-        id: 24,
+        id: 25,
         name: "Raw Granite Block",
         description: "These raw granite blocks are robust, naturally occurring stones, ideal for the creation of detailed and enduring sculptures.",
         image: "https://drive.google.com/uc?id=1AlMHDd4bzsUXros0RGCgHF9hzY42QHKt",

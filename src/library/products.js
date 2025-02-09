@@ -18,6 +18,7 @@ import Carving from "../assets/collection/Carving.png"
 import Sugar_Coated from "../assets/collection/Sugar_Coated.png"
 import Parking from "../assets/collection/Parking.png"
 import Wall_Cladding from "../assets/collection/Wall_Cladding.png"
+import Double_Charged from "../assets/collection/Double_Charged.png"
 
 // Schema
 // {
@@ -46,31 +47,6 @@ import Wall_Cladding from "../assets/collection/Wall_Cladding.png"
 // Only Demand Ranked 5 are shown as top products in home page
 
 const productsList = [
-    {
-        id: 1,
-        name: "Fencing Stone",
-        description: "these beautiful stones are made of tall narrow granite and are used for fencing, boundry markers and architectural features.known for its durability. customised based on height required .",
-        image: FencingStone,
-        showSizeDetails: true,
-        category: {
-            color: "Grey",
-            demand: 5
-        },
-        pricing: {
-            actual: "250",
-            current: "200",
-            description: "Stone"
-        },
-        mesurement: [
-            {
-                type: "Pole",
-                scale: "5.5 ft",
-                thickness: "4 inch",
-                description: ""
-            },
-        ],
-        usage: ["GARDEN_SPACE", "FENCING"]
-    },
     // Majestic Lapatro
     {
         id: 2,
@@ -132,7 +108,7 @@ const productsList = [
         showSizeDetails: true,
         category: {
             color: "Black",
-            demand: 4
+            demand: 5
         },
         pricing: {
             actual: "130",
@@ -210,7 +186,7 @@ const productsList = [
         showSizeDetails: true,
         category: {
             color: "White",
-            demand: 4
+            demand: 5
         },
         pricing: {
             actual: "160",
@@ -236,7 +212,7 @@ const productsList = [
         showSizeDetails: true,
         category: {
             color: "Black",
-            demand: 3
+            demand: 5
         },
         pricing: {
             actual: "170",
@@ -463,7 +439,7 @@ const productsList = [
         showSizeDetails: true,
         category: {
             color: "Black",
-            demand: 5
+            demand: 4
         },
         pricing: {
             actual: "",
@@ -495,7 +471,7 @@ const productsList = [
         showSizeDetails: true,
         category: {
             color: "Black",
-            demand: 5
+            demand: 4
         },
         pricing: {
             actual: "",
@@ -527,7 +503,7 @@ const productsList = [
         showSizeDetails: true,
         category: {
             color: "White",
-            demand: 5
+            demand: 4
         },
         pricing: {
             actual: "",
@@ -582,9 +558,41 @@ const productsList = [
         ],
         usage: ["FLOOR", "WALL_CLADDING", "STAIRS", "MONUMENTS"]
     },
+    // Double Charged
+    {
+        id: 20,
+        name: "Double Charged Tiles",
+        description: "Double-charged vitrified tiles are durable, low-maintenance tiles with a dual-layer pigment infusion that enhances strength and design longevity. Ideal for high-traffic areas, they offer a polished, premium look with superior resistance to stains and wear.",
+        image: Double_Charged,
+        showSizeDetails: true,
+        category: {
+            color: "White",
+            demand: 5
+        },
+        pricing: {
+            actual: "",
+            current: "",
+            description: "sq.ft."
+        },
+        mesurement: [
+            {
+                type: "Slab",
+                scale: "2*2",
+                thickness: "20-25 MM",
+                description: ""
+            },
+            {
+                type: "Slab",
+                scale: "2*4",
+                thickness: "20-25 MM",
+                description: ""
+            },
+        ],
+        usage: ["FLOOR", "WALL_CLADDING", "STAIRS", "MONUMENTS"]
+    },
     // Wall Cladding
     {
-        id: 19,
+        id: 20,
         name: "Wall Cladding",
         description: "Durable, decorative covering for walls, available in natural stone, wood, or ceramic materials. Enhances aesthetics while providing protection against weather and wear.",
         image: Wall_Cladding,
@@ -614,9 +622,35 @@ const productsList = [
         ],
         usage: ["WALL_CLADDING"]
     },
+    // Fencing Stone
+    {
+        id: 21,
+        name: "Fencing Stone",
+        description: "these beautiful stones are made of tall narrow granite and are used for fencing, boundry markers and architectural features.known for its durability. customised based on height required .",
+        image: FencingStone,
+        showSizeDetails: true,
+        category: {
+            color: "Grey",
+            demand: 5
+        },
+        pricing: {
+            actual: "250",
+            current: "200",
+            description: "Stone"
+        },
+        mesurement: [
+            {
+                type: "Pole",
+                scale: "5.5 ft",
+                thickness: "4 inch",
+                description: ""
+            },
+        ],
+        usage: ["GARDEN_SPACE", "FENCING"]
+    },
     // Unpolished Slab (Raw)
     {
-        id: 20,
+        id: 22,
         name: "Unpolished Slab (Raw)",
         description: "Freshly cut beautiful stones are often used in construction, landscaping, or other applications where a natural, unrefined look is desired. They are also the starting material for fabricators who will further cut, polish, or finish the stone according to specific project requirements.",
         image: "https://drive.google.com/uc?id=1KGGB0YU8MGlYdu2JGMIvdDgA9rSwhbdk",
@@ -641,7 +675,7 @@ const productsList = [
         usage: ["GARDEN_SPACE", "FOOT_PATH", "WALL_CLADDING", "MONUMENTS", "BENCH"]
     },
     {
-        id: 21,
+        id: 23,
         name: "Size Stones ",
         description: "These beautiful stones are used for foundation, flooring, wall cladding and other architectural elements where durability and aesthetic appeal are essential./ .",
         image: "https://drive.google.com/uc?id=1x_7Oo7c3A6BOBmSpGffTpKiBfkgX4jKK",
@@ -666,7 +700,7 @@ const productsList = [
         usage: ["WALL_CLADDING", "FOUNDATIONS", "FENCING", "BRICK_WALL"]
     },
     {
-        id: 22,
+        id: 24,
         name: "Raw Granite Block",
         description: "These raw granite blocks are robust, naturally occurring stones, ideal for the creation of detailed and enduring sculptures.",
         image: "https://drive.google.com/uc?id=1AlMHDd4bzsUXros0RGCgHF9hzY42QHKt",

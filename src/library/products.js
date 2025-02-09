@@ -1,5 +1,23 @@
 import FencingStone from "../assets/collection/Fencing-Stone.png"
-import VizagBlue from "../assets/collection/Vizag-Blue.png"
+import Black_Pearl from "../assets/collection/Black_Pearl.png"
+import Ice_Blue from "../assets/collection/Ice_Blue.png"
+import Kota_Stone from "../assets/collection/Kota_Stone.png"
+import Majestic_Lapatro from "../assets/collection/Majestic_Lapatro.png"
+import River_Black from "../assets/collection/River_Black.png"
+import River_Brown from "../assets/collection/River_Brown.png"
+import Spider_Web from "../assets/collection/Spider_Web.png"
+import Teak_Wood from "../assets/collection/Teak_Wood.png"
+import Tiger_Red from "../assets/collection/Tiger_Red.png"
+import Viscon_White from "../assets/collection/Viscon_White.png"
+import Chima_Pink from "../assets/collection/Chima_Pink.png"
+import Sadarahalli from "../assets/collection/Sadarahalli.png"
+import Vitrified from "../assets/collection/Vitrified.png"
+import Glossy_Ceramic from "../assets/collection/Glossy_Ceramic.png"
+import Matte from "../assets/collection/Matte.png"
+import Carving from "../assets/collection/Carving.png"
+import Sugar_Coated from "../assets/collection/Sugar_Coated.png"
+import Parking from "../assets/collection/Parking.png"
+import Wall_Cladding from "../assets/collection/Wall_Cladding.png"
 
 // Schema
 // {
@@ -53,40 +71,250 @@ const productsList = [
         ],
         usage: ["GARDEN_SPACE", "FENCING"]
     },
+    // Majestic Lapatro
     {
         id: 2,
-        name: "Black Galaxy",
-        description: "Black Galaxy Granite from India is prized for its deep black color and shimmering white and gold flecks. It's perfect for various uses, including countertops, flooring, and walls, both indoors and outdoors. Known for its luxury and durability, it's also popular for monuments and construction projects.",
-        image: "https://drive.google.com/uc?id=1KjUwkaouuAaoow-8ruXnbaoXfNUkfov1",
+        name: "Majestic Lapatro",
+        description: "A durable, semi-gloss stone with subtle slip resistance, perfect for kitchen countertops, bathroom vanities, and dry-area flooring. It’s low maintenance, heat, stain, and scratch-resistant, adding a sleek, contemporary touch.",
+        image: Majestic_Lapatro,
         showSizeDetails: true,
         category: {
             color: "Black",
             demand: 5
         },
         pricing: {
-            actual: "165",
+            actual: "140",
             current: "130",
             description: "sq.ft."
         },
         mesurement: [
             {
                 type: "Slab",
-                scale: "9*3",
+                scale: "10*3",
                 thickness: "16-20 MM",
                 description: "Sqft"
             },
         ],
-        usage: ["COUNTER_TOPS", "FLOOR", "WALL_CLADDING", "GRAVEYARD", "STAIRS"]
+        usage: ["FLOOR", "WALL_CLADDING", "STAIRS"]
     },
+    // Black Pearl
     {
-        id: 3,
-        name: "Black Pearl Granite",
-        description: "Black Pearl granite is a luxurious and sophisticated natural stone that is highly sought after for its distinctive appearance and durability,prized for its striking appearance, durability, and versatility, making it a popular choice for both residential and commercial applications where elegance and longevity are valued.",
-        image: "https://drive.google.com/uc?id=1TcTVMC784LmcvDrYvJnmMPxUyQ6J5VDu",
+        id: 5,
+        name: "Black Pearl",
+        description: "A luxurious black stone with white pearl-like patches, perfect for countertops, vanities, and flooring. Durable and elegant, it adds timeless beauty to any space.",
+        image: Black_Pearl,
         showSizeDetails: true,
         category: {
             color: "Black",
             demand: 5
+        },
+        pricing: {
+            actual: "145",
+            current: "130",
+            description: "sq.ft."
+        },
+        mesurement: [
+            {
+                type: "Slab",
+                scale: "10*3",
+                thickness: "16-20MM",
+                description: ""
+            },
+        ],
+        usage: ["COUNTER_TOPS", "FLOOR", "WALL_CLADDING", "COUNTER_TOPS"]
+    },
+    // River Black
+    {
+        id: 4,
+        name: "River Black",
+        description: "A sleek dark stone with flowing gray and white veins, perfect for countertops, flooring, and wall cladding. Durable, low-maintenance, and elegantly versatile for any space.",
+        image: River_Black,
+        showSizeDetails: true,
+        category: {
+            color: "Black",
+            demand: 4
+        },
+        pricing: {
+            actual: "130",
+            current: "125",
+            description: "sq.ft."
+        },
+        mesurement: [
+            {
+                type: "Slab",
+                scale: "10*3",
+                thickness: "16-20MM",
+                description: ""
+            },
+        ],
+        usage: ["COUNTER_TOPS", "FLOOR", "WALL_CLADDING", "COUNTER_TOPS"]
+    },
+    // River Brown
+    {
+        id: 9,
+        name: "River Brown",
+        description: "A warm blend of brown, gold, cream, and gray tones with flowing veins, perfect for countertops, vanities, flooring, and wall cladding. Durable, low-maintenance, and adds sophistication to any space.",
+        image: River_Brown,
+        showSizeDetails: true,
+        category: {
+            color: "Brown",
+            demand: 5
+        },
+        pricing: {
+            actual: "140",
+            current: "130",
+            description: "sq.ft."
+        },
+        mesurement: [
+            {
+                type: "Slab",
+                scale: "10*3",
+                thickness: "16-20MM",
+                description: ""
+            },
+        ],
+        usage: ["COUNTER_TOPS", "FLOOR", "WALL_CLADDING", "STAIRS"]
+    },
+    // Tiger Skin
+    {
+        id: 11,
+        name: "Tiger Skin",
+        description: "Bold swirls of golden browns, blacks, and grays, perfect for countertops, flooring, and wall cladding. Durable, easy to maintain, and adds an exotic touch to any space.",
+        image: Tiger_Red,
+        showSizeDetails: true,
+        category: {
+            color: "Red",
+            demand: 3
+        },
+        pricing: {
+            actual: "130",
+            current: "115",
+            description: "sq.ft."
+        },
+        mesurement: [
+            {
+                type: "Slab",
+                scale: "10*3",
+                thickness: "16-20 MM",
+                description: ""
+            },
+        ],
+        usage: ["FLOOR", "COUNTER_TOPS"]
+    },
+    // Viscon White
+    {
+        id: 3,
+        name: "Viscon White",
+        description: "Elegant white granite with grey, black, and beige veining, perfect for countertops, vanities, and flooring. Durable, low-maintenance, and ideal for modern or traditional interiors.",
+        image: Viscon_White,
+        showSizeDetails: true,
+        category: {
+            color: "White",
+            demand: 4
+        },
+        pricing: {
+            actual: "160",
+            current: "140",
+            description: "sq.ft."
+        },
+        mesurement: [
+            {
+                type: "Slab",
+                scale: "10*3",
+                thickness: "16-20MM",
+                description: ""
+            },
+        ],
+        usage: ["COUNTER_TOPS", "FLOOR", "WALL_CLADDING"]
+    },
+    // Spider Web
+    {
+        id: 6,
+        name: "Spider Web",
+        description: "A dramatic stone with bold, web-like veining, perfect for countertops, flooring, and feature walls. Elegant, durable, and ideal for modern or classic interiors.",
+        image: Spider_Web,
+        showSizeDetails: true,
+        category: {
+            color: "Black",
+            demand: 3
+        },
+        pricing: {
+            actual: "170",
+            current: "150",
+            description: "sq.ft."
+        },
+        mesurement: [
+            {
+                type: "Slab",
+                scale: "10*3",
+                thickness: "16-20MM",
+                description: ""
+            },
+        ],
+        usage: ["FLOOR", "WALL_CLADDING"]
+    },
+    // Teakwood
+    {
+        id: 7,
+        name: "Teak Wood",
+        description: "A warm brown stone with wood-like veins, perfect for countertops, flooring, and backsplashes. Durable, low-maintenance, and ideal for rustic or refined interiors.",
+        image: Teak_Wood,
+        showSizeDetails: true,
+        category: {
+            color: "Wood",
+            demand: 5
+        },
+        pricing: {
+            actual: "145",
+            current: "125",
+            description: "sq.ft."
+        },
+        mesurement: [
+            {
+                type: "Slab",
+                scale: "10*3",
+                thickness: "16-20MM",
+                description: ""
+            },
+        ],
+        usage: ["FLOOR", "STAIRS"]
+    },
+    // Ice Blue
+    {
+        id: 8,
+        name: "Ice Blue",
+        description: "A light blue-gray stone with silver, black, and white flecks, perfect for kitchens, countertops, and flooring. Durable, low-maintenance, and offers a sophisticated, refreshing look.",
+        image: Ice_Blue,
+        showSizeDetails: true,
+        category: {
+            color: "Blue",
+            demand: 3
+        },
+        pricing: {
+            actual: "135",
+            current: "120",
+            description: "sq.ft."
+        },
+        mesurement: [
+            {
+                type: "Slab",
+                scale: "10*3",
+                thickness: "16-20MM",
+                description: ""
+            },
+        ],
+        usage: ["COUNTER_TOPS", "FLOOR"]
+    },
+    // Rosy Pink
+    {
+        id: 10,
+        name: "Rosy Pink",
+        description: "Soft pink hues with white, cream, and gray tones, perfect for countertops, vanities, and flooring. Durable, low-maintenance, and adds a sophisticated touch to any interior.",
+        image: Chima_Pink,
+        showSizeDetails: true,
+        category: {
+            color: "Red",
+            demand: 4
         },
         pricing: {
             actual: "140",
@@ -96,215 +324,299 @@ const productsList = [
         mesurement: [
             {
                 type: "Slab",
-                scale: "9*3",
-                thickness: "16-20MM",
-                description: ""
-            },
-        ],
-        usage: ["COUNTER_TOPS", "FLOOR", "WALL_CLADDING", "GRAVEYARD", "STAIRS"]
-    },
-    {
-        id: 4,
-        name: "Blue Sapphire | Vizag Blue Granite",
-        description: "Blue sapphire granite is an elegant combination of blue,grey,black and brown. this durable and versatile granite features a small intricate pattern of flecks, and is suited for use as granite countertops,backsplashes and more.",
-        image: VizagBlue,
-        showSizeDetails: true,
-        category: {
-            color: "Blue",
-            demand: 3
-        },
-        pricing: {
-            actual: "125",
-            current: "95",
-            description: "sq.ft."
-        },
-        mesurement: [
-            {
-                type: "Slab",
-                scale: "9*3",
-                thickness: "16-20MM",
-                description: ""
-            },
-        ],
-        usage: ["COUNTER_TOPS", "FLOOR", "WALL_CLADDING"]
-    },
-    {
-        id: 5,
-        name: "Chima Pink Granite",
-        description: "Chima pink granite is a beautiful natural stone known for its distinctive pink coloration with grey veins and specks.the unique color and pattern make it popular choice for addding warmth and elegance to residential and commercial spaces .",
-        image: "https://drive.google.com/uc?id=1h3tLhfZbpsyehZ9niKjUWUvtHppsdgFl",
-        showSizeDetails: true,
-        category: {
-            color: "Pink",
-            demand: 5
-        },
-        pricing: {
-            actual: "100",
-            current: "80",
-            description: "sq.ft."
-        },
-        mesurement: [
-            {
-                type: "Slab",
-                scale: "9*3",
-                thickness: "16-20MM",
-                description: ""
-            },
-        ],
-        usage: ["COUNTER_TOPS", "FLOOR", "WALL_CLADDING", "WALL_CLADDING"]
-    },
-    {
-        id: 6,
-        name: "Paradiso Granite",
-        description: "Paradiso granite is a type of natural stone known for its striking appearance, primarily quarried in India. It is characterized by its swirling patterns of dark and light colors, usually combining shades of deep purple, grey, and black with streaks of white or light pink. ",
-        image: "https://drive.google.com/uc?id=1lwhrPULQT4z-ppq44r7Jf6fzAp4MAZoZ",
-        showSizeDetails: true,
-        category: {
-            color: "Grey",
-            demand: 5
-        },
-        pricing: {
-            actual: "120",
-            current: "90",
-            description: "sq.ft."
-        },
-        mesurement: [
-            {
-                type: "Slab",
-                scale: "9*3",
-                thickness: "16-20MM",
-                description: ""
-            },
-        ],
-        usage: ["FLOOR", "WALL_CLADDING", "COUNTER_TOPS", "STAIRS"]
-    },
-    {
-        id: 7,
-        name: "Coffee Brown Granite",
-        description: "Coffee brown granite is a rich and elegant natural stone characterized by its deep brown color with black and grey flecks,its highly versatile and used extensively in kitchen countertops,vanities,flooring and wall cladding.",
-        image: "https://drive.google.com/uc?id=1g-AmNh-GvNCSqIQ1lAngGzJWDppBeRSu",
-        showSizeDetails: true,
-        category: {
-            color: "Brown",
-            demand: 4
-        },
-        pricing: {
-            actual: "100",
-            current: "80",
-            description: "sq.ft."
-        },
-        mesurement: [
-            {
-                type: "Slab",
-                scale: "9*3",
-                thickness: "16-20MM",
-                description: ""
-            },
-        ],
-        usage: ["COUNTER_TOPS", "FLOOR", "WALL_CLADDING", "STAIRS"]
-    },
-    {
-        id: 8,
-        name: "Hassan Green Granite",
-        description: "Hassan green granite is a type of granite known for its greenish hue and speckled pattern valued for its unique coloration, durability and versatility in architectural and design applications.",
-        image: "https://drive.google.com/uc?id=1rMgZyxWqelmsJO6N60C0dacv_5RtkVtw",
-        showSizeDetails: true,
-        category: {
-            color: "Green",
-            demand: 2
-        },
-        pricing: {
-            actual: "200",
-            current: "180",
-            description: "sq.ft."
-        },
-        mesurement: [
-            {
-                type: "Slab",
-                scale: "9*3",
-                thickness: "16-20MM",
-                description: ""
-            },
-        ],
-        usage: ["COUNTER_TOPS", "FLOOR", "WALL_CLADDING", "STAIRS"]
-    },
-    {
-        id: 9,
-        name: "Viscount White",
-        description: "Viscount white is a popular granite that features swirls of white, grey and black hues that flow together beautifully. this granite is suitable for any projects including counter tops, showe walls,shower seats.",
-        image: "https://drive.google.com/uc?id=1T55vmVY3FM4nib7iStRY3A9YVtJGPn7x",
-        showSizeDetails: true,
-        category: {
-            color: "White",
-            demand: 3
-        },
-        pricing: {
-            actual: "150",
-            current: "120",
-            description: "sq.ft."
-        },
-        mesurement: [
-            {
-                type: "Slab",
-                scale: "9*3",
-                thickness: "16-20MM",
-                description: ""
-            },
-        ],
-        usage: ["COUNTER_TOPS", "FLOOR", "WALL_CLADDING", "STAIRS"]
-    },
-    {
-        id: 10,
-        name: "Imperial Red",
-        description: "Imperial red granite is a striking natural stone known for its deep red and pinkish tones, popular for both interior and exterior applications due to its durability and aesthetic appeal.",
-        image: "https://drive.google.com/uc?id=1zU_T0Fqr9h19PLF-4qUVRMihiuVH15xR",
-        showSizeDetails: true,
-        category: {
-            color: "Red",
-            demand: 4
-        },
-        pricing: {
-            actual: "160",
-            current: "100",
-            description: "sq.ft."
-        },
-        mesurement: [
-            {
-                type: "Slab",
-                scale: "9*3",
+                scale: "10*3",
                 thickness: "16-20MM",
                 description: ""
             },
         ],
         usage: ["FLOOR", "WALL_CLADDING", "COUNTER_TOPS"]
     },
+    // Sadarahalli
     {
-        id: 11,
-        name: "Tiger Red Granite",
-        description: "Tiger Red granite is a stunning natural stone known for its striking appearance and durabilityis prized for its striking color palette, durability, and versatile applications.",
-        image: "https://drive.google.com/uc?id=1O3JFE-5-A4npRnW8cBw4JPw9XZch4n8A",
+        id: 12,
+        name: "Sadarahalli",
+        description: "Durable, greyish-white granite with wavy black patterns, quarried in Karnataka, India. Ideal for flooring, countertops, and exterior applications due to its strength and aesthetic appeal.",
+        image: Sadarahalli,
         showSizeDetails: true,
         category: {
-            color: "Red",
-            demand: 5
+            color: "White",
+            demand: 4
         },
         pricing: {
-            actual: "100",
-            current: "80",
+            actual: "130",
+            current: "100",
             description: "sq.ft."
         },
         mesurement: [
             {
                 type: "Slab",
-                scale: "9*3",
+                scale: "10*3",
                 thickness: "16-20 MM",
                 description: ""
             },
         ],
-        usage: ["FLOOR", "WALL_CLADDING"]
+        usage: ["FLOOR", "STAIRS", "GARDEN_SPACE", "FOOT_PATH", "MONUMENTS"]
     },
+    // Kota Stone
     {
-        id: 12,
+        id: 13,
+        name: "Kota Stone",
+        description: "Durable, fine-grained limestone in blue and brown shades, quarried in Kota, Rajasthan, India. Known for its toughness and non-slippery nature, it is ideal for flooring, pathways, and outdoor spaces.",
+        image: Kota_Stone,
+        showSizeDetails: true,
+        category: {
+            color: "Black",
+            demand: 5
+        },
+        pricing: {
+            actual: "50",
+            current: "40",
+            description: "sq.ft."
+        },
+        mesurement: [
+            {
+                type: "Slab",
+                scale: "2*2",
+                thickness: "20-25 MM",
+                description: ""
+            },
+            {
+                type: "Slab",
+                scale: "2*4",
+                thickness: "20-25 MM",
+                description: ""
+            },
+        ],
+        usage: ["FLOOR", "STAIRS", "GARDEN_SPACE", "FOOT_PATH", "MONUMENTS"]
+    },
+    // Tiles
+    // Vitrified Tiles
+    {
+        id: 14,
+        name: "Vitrified Tiles",
+        description: "Durable, low-porosity tiles with a glossy or matte finish, made from a mix of clay and silica. Resistant to stains and water, they are ideal for flooring in homes, offices, and commercial spaces.",
+        image: Vitrified,
+        showSizeDetails: true,
+        category: {
+            color: "White",
+            demand: 5
+        },
+        pricing: {
+            actual: "",
+            current: "",
+            description: "sq.ft."
+        },
+        mesurement: [
+            {
+                type: "Slab",
+                scale: "2*2",
+                thickness: "20-25 MM",
+                description: ""
+            },
+            {
+                type: "Slab",
+                scale: "2*4",
+                thickness: "20-25 MM",
+                description: ""
+            },
+        ],
+        usage: ["FLOOR", "WALL_CLADDING", "STAIRS", "MONUMENTS"]
+    },
+    // GLOSSY CERAMIC
+    {
+        id: 15,
+        name: "Glossy Ceramic Tiles",
+        description: "Durable, high-shine ceramic tiles with a smooth, reflective surface. Ideal for walls and low-traffic floors, offering a sleek and elegant look.",
+        image: Glossy_Ceramic,
+        showSizeDetails: true,
+        category: {
+            color: "White",
+            demand: 5
+        },
+        pricing: {
+            actual: "",
+            current: "",
+            description: "sq.ft."
+        },
+        mesurement: [
+            {
+                type: "Slab",
+                scale: "2*2",
+                thickness: "20-25 MM",
+                description: ""
+            },
+            {
+                type: "Slab",
+                scale: "2*4",
+                thickness: "20-25 MM",
+                description: ""
+            },
+        ],
+        usage: ["FLOOR", "WALL_CLADDING", "STAIRS", "MONUMENTS"]
+    },
+    // Matte
+    {
+        id: 16,
+        name: "Matte Finish Tiles",
+        description: "A sleek, non-glossy surface with excellent slip resistance, perfect for both indoor and outdoor spaces. Durable and low-maintenance with a modern, elegant look while enhancing safety and comfort.",
+        image: Matte,
+        showSizeDetails: true,
+        category: {
+            color: "Black",
+            demand: 5
+        },
+        pricing: {
+            actual: "",
+            current: "",
+            description: "sq.ft."
+        },
+        mesurement: [
+            {
+                type: "Slab",
+                scale: "2*2",
+                thickness: "20-25 MM",
+                description: ""
+            },
+            {
+                type: "Slab",
+                scale: "2*4",
+                thickness: "20-25 MM",
+                description: ""
+            },
+        ],
+        usage: ["FLOOR", "WALL_CLADDING", "STAIRS", "MONUMENTS"]
+    },
+    // Carving
+    {
+        id: 17,
+        name: "Carving Tiles",
+        description: "Intricate designs etched into the surface, adding depth and elegance to any space. Perfect for walls, facades, and decorative accents, they combine durability with artistic appeal.",
+        image: Carving,
+        showSizeDetails: true,
+        category: {
+            color: "Black",
+            demand: 5
+        },
+        pricing: {
+            actual: "",
+            current: "",
+            description: "sq.ft."
+        },
+        mesurement: [
+            {
+                type: "Slab",
+                scale: "2*2",
+                thickness: "20-25 MM",
+                description: ""
+            },
+            {
+                type: "Slab",
+                scale: "2*4",
+                thickness: "20-25 MM",
+                description: ""
+            },
+        ],
+        usage: ["FLOOR", "WALL_CLADDING", "STAIRS", "MONUMENTS"]
+    },
+    // Sugar Coated
+    {
+        id: 18,
+        name: "Sugar Coated Tiles",
+        description: "Textured, crystal-like surface that adds a subtle sparkle and refined elegance. Durable and slip-resistant, they are perfect for creating stylish and sophisticated interiors.",
+        image: Sugar_Coated,
+        showSizeDetails: true,
+        category: {
+            color: "White",
+            demand: 5
+        },
+        pricing: {
+            actual: "",
+            current: "",
+            description: "sq.ft."
+        },
+        mesurement: [
+            {
+                type: "Slab",
+                scale: "2*2",
+                thickness: "20-25 MM",
+                description: ""
+            },
+            {
+                type: "Slab",
+                scale: "2*4",
+                thickness: "20-25 MM",
+                description: ""
+            },
+        ],
+        usage: ["FLOOR", "GARDEN_SPACE", "FOOT_PATH", "STAIRS", "MONUMENTS"]
+    },
+    // Parking / Outdoor
+    {
+        id: 19,
+        name: "Parking / Outdoor Tiles",
+        description: "Featuring a strong, anti-slip texture for superior grip and durability. Designed to withstand frequent use and harsh weather. They are perfect for parking, walkways, and open spaces.",
+        image: Parking,
+        showSizeDetails: true,
+        category: {
+            color: "White",
+            demand: 5
+        },
+        pricing: {
+            actual: "",
+            current: "",
+            description: "sq.ft."
+        },
+        mesurement: [
+            {
+                type: "Slab",
+                scale: "2*2",
+                thickness: "20-25 MM",
+                description: ""
+            },
+            {
+                type: "Slab",
+                scale: "2*4",
+                thickness: "20-25 MM",
+                description: ""
+            },
+        ],
+        usage: ["FLOOR", "WALL_CLADDING", "STAIRS", "MONUMENTS"]
+    },
+    // Wall Cladding
+    {
+        id: 19,
+        name: "Wall Cladding",
+        description: "Durable, decorative covering for walls, available in natural stone, wood, or ceramic materials. Enhances aesthetics while providing protection against weather and wear.",
+        image: Wall_Cladding,
+        showSizeDetails: true,
+        category: {
+            color: "Multi Coloured",
+            demand: 5
+        },
+        pricing: {
+            actual: "",
+            current: "",
+            description: "sq.ft."
+        },
+        mesurement: [
+            {
+                type: "Slab",
+                scale: "2*2",
+                thickness: "20-25 MM",
+                description: ""
+            },
+            {
+                type: "Slab",
+                scale: "2*4",
+                thickness: "20-25 MM",
+                description: ""
+            },
+        ],
+        usage: ["WALL_CLADDING"]
+    },
+    // Unpolished Slab (Raw)
+    {
+        id: 20,
         name: "Unpolished Slab (Raw)",
         description: "Freshly cut beautiful stones are often used in construction, landscaping, or other applications where a natural, unrefined look is desired. They are also the starting material for fabricators who will further cut, polish, or finish the stone according to specific project requirements.",
         image: "https://drive.google.com/uc?id=1KGGB0YU8MGlYdu2JGMIvdDgA9rSwhbdk",
@@ -329,7 +641,7 @@ const productsList = [
         usage: ["GARDEN_SPACE", "FOOT_PATH", "WALL_CLADDING", "MONUMENTS", "BENCH"]
     },
     {
-        id: 13,
+        id: 21,
         name: "Size Stones ",
         description: "These beautiful stones are used for foundation, flooring, wall cladding and other architectural elements where durability and aesthetic appeal are essential./ .",
         image: "https://drive.google.com/uc?id=1x_7Oo7c3A6BOBmSpGffTpKiBfkgX4jKK",
@@ -354,7 +666,7 @@ const productsList = [
         usage: ["WALL_CLADDING", "FOUNDATIONS", "FENCING", "BRICK_WALL"]
     },
     {
-        id: 14,
+        id: 22,
         name: "Raw Granite Block",
         description: "These raw granite blocks are robust, naturally occurring stones, ideal for the creation of detailed and enduring sculptures.",
         image: "https://drive.google.com/uc?id=1AlMHDd4bzsUXros0RGCgHF9hzY42QHKt",
@@ -377,31 +689,6 @@ const productsList = [
             },
         ],
         usage: ["GARDEN_SPACE", "MONUMENTS", "CUSTOMIZATION"]
-    },
-    {
-        id: 15,
-        name: "Pebbles",
-        description: "Pebbles are small, smooth stones, often found on beaches or riverbeds, that come in various colors and sizes. They are commonly used in landscaping, interior decor, and crafts for their natural beauty and versatility.",
-        image: "https://drive.google.com/uc?id=1MxCdvW87yBjAASmT8Nsw7gD8oB76wkjv",
-        showSizeDetails: false,
-        category: {
-            color: "Multi - Colours",
-            demand: 5
-        },
-        pricing: {
-            actual: "25",
-            current: "20",
-            description: "Kg"
-        },
-        mesurement: [
-            {
-                type: "River Pebbles",
-                scale: "",
-                thickness: "Customized",
-                description: ""
-            },
-        ],
-        usage: ["GARDEN_SPACE", "WALL_CLADDING"]
     },
 ]
 
